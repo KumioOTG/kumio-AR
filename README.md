@@ -7,5 +7,5 @@ A research project at Istanbul Technical University
 Contact us: kumio.itu0@gmail.com
 
 ## Unity version: 2020.3.45f1
-## AR Foundation:
-## ARCore: 
+## AR Foundation: 4.1.13
+## ARCore: 4.1.13
