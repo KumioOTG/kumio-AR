@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Samples/Mixed Reality Toolkit Foundation/2.8.3/Scene System Resources/DefaultManagerScene.unity
+    guid: ae7bb08d297fb69408695d8de0962524
+  - enabled: 0
+    path: Assets/Samples/Mixed Reality Toolkit Foundation/2.8.3/Scene System Resources/DefaultLightingScene.unity
+    guid: 7e54e36c44f826c438c95da79f8de638
+  - enabled: 0
+    path: Assets/Samples/Mixed Reality Toolkit Foundation/2.8.3/Scene System Resources/DefaultLightingScene.unity
+    guid: 7e54e36c44f826c438c95da79f8de638
+  - enabled: 0
+    path: Assets/Samples/Mixed Reality Toolkit Foundation/2.8.3/Scene System Resources/DefaultLightingScene.unity
+    guid: 7e54e36c44f826c438c95da79f8de638
+  - enabled: 0
+    path: Assets/Scenes/KG_Tutorial.unity
+    guid: 9c26806a74985514ab2fdc0904d37b1d
+  - enabled: 0
+    path: Assets/Scenes/KGO_Tutorial.unity
+    guid: 55e11462020496b4c8425ff1384dbe29
+  - enabled: 0
+    path: Assets/Scenes/KGO_AR_Tutorial.unity
+    guid: e6d7ff0292301c640ab726d7960b7b71
+  - enabled: 0
+    path: Assets/Scenes/KGO_AR_Tutorial2.unity
+    guid: d00417f1e2c93514b9d5c71336117dc7
+  - enabled: 1
+    path: Assets/Scenes/node0-AR.unity
+    guid: 00a34be9049d30642bea8dc0646a791f
+  - enabled: 1
+    path: Assets/Scenes/node1-AR.unity
+    guid: 2fb5a9f36f4c6e540bf73e871416e614
+  - enabled: 1
+    path: Assets/Scenes/node2-AR.unity
+    guid: ada5c7fba87ba5044aeb9795d6fd329d
+  - enabled: 1
+    path: Assets/Scenes/node3-AR.unity
+    guid: 78a0268c09f47894d815fabc9cda0825
+  - enabled: 1
+    path: Assets/Scenes/node4-AR.unity
+    guid: 085f58f803ac2d54eae0f132f741cfcd
+  - enabled: 1
+    path: Assets/Scenes/node5-1-AR.unity
+    guid: a5ccd0b3e408214489e44697fdf8774e
+  - enabled: 1
+    path: Assets/Scenes/node5-2-AR.unity
+    guid: 5ae4275d7e5bcf54484a192936112ca5
+  - enabled: 0
+    path: Assets/Scenes/KGO_AR_Tutorial3.unity
+    guid: c12e2cc5bdf7f9644bc6abc9b1df906a
+  - enabled: 0
+    path: Assets/Scenes/models_test_AR.unity
+    guid: f84fcc6f5853d4443b624d48e60eb7c6
+  m_configObjects:
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 1f78f2608ac15a643a7898c2a1da3863, type: 2}
+    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 6158a31d495ea594398622d8410277f1, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: b3174f66aa5c04f41b4fbf6118460d72, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 945122b4e3dbd764faa99d304ca3a110, type: 2}
