@@ -10,6 +10,10 @@ public class DetectionManager : MonoBehaviour
     [SerializeField]
     private List<PuzzleDetectorV2> detectors = new List<PuzzleDetectorV2>();
 
+    [SerializeField]
+    private GameObject objectToActivate; // The object you want to activate when all are detected.
+
+
     private int detectedCount = 0; // Count of objects that have been detected
 
     private void Start()
@@ -34,11 +38,9 @@ public class DetectionManager : MonoBehaviour
         }
 
         // Check if all objects are detected
-        if (detectedCount == detectors.Count)
-        {
-            UnityEngine.Debug.Log("All objects detected!");
-        }
+        CheckAllObjectsDetected(); // This line was missing in your original code
     }
+
 
     private void OnDestroy()
     {
@@ -46,6 +48,14 @@ public class DetectionManager : MonoBehaviour
         foreach (var detector in detectors)
         {
             detector.OnDetection -= HandleDetection;
+        }
+    }
+
+    private void CheckAllObjectsDetected()
+    {
+        if (detectedCount == detectors.Count)
+        {
+            objectToActivate.SetActive(true);
         }
     }
 }

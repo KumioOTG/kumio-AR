@@ -44,5 +44,7 @@ public class PuzzleDetectorV2 : MonoBehaviour
     {
         return (targetLayers.value & (1 << objectLayer)) != 0;
     }
+
+
 }
 
