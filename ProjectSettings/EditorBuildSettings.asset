@@ -29,25 +29,25 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/KGO_AR_Tutorial2.unity
     guid: d00417f1e2c93514b9d5c71336117dc7
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/node0-AR.unity
     guid: 00a34be9049d30642bea8dc0646a791f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/node1-AR.unity
     guid: 2fb5a9f36f4c6e540bf73e871416e614
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/node2-AR.unity
     guid: ada5c7fba87ba5044aeb9795d6fd329d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/node3-AR.unity
     guid: 78a0268c09f47894d815fabc9cda0825
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/node4-AR.unity
     guid: 085f58f803ac2d54eae0f132f741cfcd
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/node5-1-AR.unity
     guid: a5ccd0b3e408214489e44697fdf8774e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/node5-2-AR.unity
     guid: 5ae4275d7e5bcf54484a192936112ca5
   - enabled: 0
@@ -56,6 +56,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/models_test_AR.unity
     guid: f84fcc6f5853d4443b624d48e60eb7c6
+  - enabled: 1
+    path: Assets/Scenes/node9-2-AR.unity
+    guid: 8e852c88ccba137419b345224758347e
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 1f78f2608ac15a643a7898c2a1da3863, type: 2}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 6158a31d495ea594398622d8410277f1, type: 2}
