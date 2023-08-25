@@ -316,7 +316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b3e6359c9750ad4fb8a05c9b8704d7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  handType: 1
+  handType: -1
   proximityType: 3
   executionOrder: 0
   constraintOnRotation: 5
@@ -793,7 +793,6 @@ GameObject:
   m_Component:
   - component: {fileID: 45084775}
   - component: {fileID: 45084778}
-  - component: {fileID: 45084777}
   - component: {fileID: 45084776}
   m_Layer: 0
   m_Name: MainText
@@ -913,14 +912,6 @@ MonoBehaviour:
   _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
---- !u!222 &45084777
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 45084774}
-  m_CullTransparentMesh: 0
 --- !u!23 &45084778
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1534,6 +1525,7 @@ GameObject:
   - component: {fileID: 98263490}
   - component: {fileID: 98263489}
   - component: {fileID: 98263488}
+  - component: {fileID: 98263498}
   m_Layer: 0
   m_Name: model_sikke-1-n2
   m_TagString: Untagged
@@ -1838,6 +1830,102 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 98263486}
   m_Mesh: {fileID: 2534964839176971238, guid: 1450fea79dc569646a5d67a7eae7bba2, type: 3}
+--- !u!82 &98263498
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 98263486}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 016e1b1f6e26825458e43ba4c6a6fe5e, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &101086881
 GameObject:
   m_ObjectHideFlags: 0
@@ -2577,7 +2665,6 @@ GameObject:
   m_Component:
   - component: {fileID: 148456004}
   - component: {fileID: 148456007}
-  - component: {fileID: 148456006}
   - component: {fileID: 148456005}
   m_Layer: 0
   m_Name: TextMeshPro
@@ -2697,14 +2784,6 @@ MonoBehaviour:
   _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
---- !u!222 &148456006
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 148456003}
-  m_CullTransparentMesh: 0
 --- !u!23 &148456007
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4043,7 +4122,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: a9c06369f1596534289c294be523c74a, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 212fd9571ba92ac4e8c19c6ceecfd340, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -4198,7 +4277,6 @@ GameObject:
   m_Component:
   - component: {fileID: 226957867}
   - component: {fileID: 226957870}
-  - component: {fileID: 226957869}
   - component: {fileID: 226957868}
   m_Layer: 0
   m_Name: TextMeshPro
@@ -4318,14 +4396,6 @@ MonoBehaviour:
   _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
---- !u!222 &226957869
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 226957866}
-  m_CullTransparentMesh: 0
 --- !u!23 &226957870
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4858,7 +4928,6 @@ GameObject:
   m_Component:
   - component: {fileID: 248214132}
   - component: {fileID: 248214135}
-  - component: {fileID: 248214134}
   - component: {fileID: 248214133}
   m_Layer: 0
   m_Name: MainText
@@ -4978,14 +5047,6 @@ MonoBehaviour:
   _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
---- !u!222 &248214134
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 248214131}
-  m_CullTransparentMesh: 0
 --- !u!23 &248214135
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5471,7 +5532,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToCollect: {fileID: 263075305}
   nextButton: {fileID: 0}
-  soundPrefab: {fileID: 0}
+  soundPrefab: {fileID: 1449581550}
 --- !u!1 &264523969
 GameObject:
   m_ObjectHideFlags: 0
@@ -6448,7 +6509,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToCollect: {fileID: 278202843}
   nextButton: {fileID: 0}
-  soundPrefab: {fileID: 0}
+  soundPrefab: {fileID: 1449581550}
 --- !u!65 &278202851
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8673,7 +8734,6 @@ GameObject:
   m_Component:
   - component: {fileID: 372599550}
   - component: {fileID: 372599553}
-  - component: {fileID: 372599552}
   - component: {fileID: 372599551}
   m_Layer: 0
   m_Name: TextMeshPro
@@ -8793,14 +8853,6 @@ MonoBehaviour:
   _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
---- !u!222 &372599552
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 372599549}
-  m_CullTransparentMesh: 0
 --- !u!23 &372599553
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9002,7 +9054,6 @@ GameObject:
   m_Component:
   - component: {fileID: 395370497}
   - component: {fileID: 395370500}
-  - component: {fileID: 395370499}
   - component: {fileID: 395370498}
   m_Layer: 0
   m_Name: SubText
@@ -9122,14 +9173,6 @@ MonoBehaviour:
   _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
---- !u!222 &395370499
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 395370496}
-  m_CullTransparentMesh: 0
 --- !u!23 &395370500
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11008,7 +11051,6 @@ GameObject:
   m_Component:
   - component: {fileID: 476335097}
   - component: {fileID: 476335100}
-  - component: {fileID: 476335099}
   - component: {fileID: 476335098}
   m_Layer: 0
   m_Name: TextMeshPro
@@ -11128,14 +11170,6 @@ MonoBehaviour:
   _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
---- !u!222 &476335099
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 476335096}
-  m_CullTransparentMesh: 0
 --- !u!23 &476335100
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12857,10 +12891,10 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 548198303}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 8b7d8048136741a4fbe96bd861c6e1c6, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -14020,7 +14054,6 @@ GameObject:
   m_Component:
   - component: {fileID: 577313292}
   - component: {fileID: 577313295}
-  - component: {fileID: 577313294}
   - component: {fileID: 577313293}
   m_Layer: 0
   m_Name: MainText
@@ -14140,14 +14173,6 @@ MonoBehaviour:
   _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
---- !u!222 &577313294
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 577313291}
-  m_CullTransparentMesh: 0
 --- !u!23 &577313295
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16677,9 +16702,9 @@ MonoBehaviour:
   OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: Increment
+      - m_Target: {fileID: 764359836}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17008,7 +17033,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: a3b3c422959099e478df0bd658fb2cfc, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 8bee5a99833c8a64787a3a07982e3f03, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -18131,6 +18156,7 @@ GameObject:
   - component: {fileID: 856337278}
   - component: {fileID: 856337277}
   - component: {fileID: 856337274}
+  - component: {fileID: 856337282}
   m_Layer: 0
   m_Name: model_sikke-2-n4
   m_TagString: Untagged
@@ -18336,7 +18362,7 @@ MonoBehaviour:
   localUp: {x: 0, y: 1, z: 0}
   localCenter: {x: 0, y: 0, z: 0}
   bounds: {x: 0, y: 0}
-  touchableCollider: {fileID: 0}
+  touchableCollider: {fileID: 856337277}
 --- !u!114 &856337281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18351,6 +18377,102 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShowTetherWhenManipulating: 0
   IsBoundsHandles: 0
+--- !u!82 &856337282
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 856337270}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 016e1b1f6e26825458e43ba4c6a6fe5e, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &894423655
 GameObject:
   m_ObjectHideFlags: 0
@@ -20868,7 +20990,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1006526743}
   - component: {fileID: 1006526746}
-  - component: {fileID: 1006526745}
   - component: {fileID: 1006526744}
   m_Layer: 0
   m_Name: TextMeshPro
@@ -20988,14 +21109,6 @@ MonoBehaviour:
   _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
---- !u!222 &1006526745
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1006526742}
-  m_CullTransparentMesh: 0
 --- !u!23 &1006526746
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21802,7 +21915,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextParent: {fileID: 1927721333}
   currentParent: {fileID: 1060945083}
-  delayInSeconds: 2
+  delayInSeconds: 4
   objectDetector: {fileID: 560285690}
 --- !u!114 &1060945088
 MonoBehaviour:
@@ -22296,7 +22409,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1101531025}
   - component: {fileID: 1101531028}
-  - component: {fileID: 1101531027}
   - component: {fileID: 1101531026}
   m_Layer: 0
   m_Name: MainText
@@ -22417,14 +22529,6 @@ MonoBehaviour:
   _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
---- !u!222 &1101531027
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1101531024}
-  m_CullTransparentMesh: 0
 --- !u!23 &1101531028
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -24417,7 +24521,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1293962311}
   - component: {fileID: 1293962314}
-  - component: {fileID: 1293962313}
   - component: {fileID: 1293962312}
   m_Layer: 0
   m_Name: TextMeshPro
@@ -24537,14 +24640,6 @@ MonoBehaviour:
   _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
---- !u!222 &1293962313
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1293962310}
-  m_CullTransparentMesh: 0
 --- !u!23 &1293962314
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -24668,7 +24763,7 @@ RectTransform:
   m_Children:
   - {fileID: 278202842}
   m_Father: {fileID: 1557057625}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -26921,6 +27016,133 @@ Transform:
   m_Father: {fileID: 938694067}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1449581550
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1449581552}
+  - component: {fileID: 1449581551}
+  m_Layer: 0
+  m_Name: Sound (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1449581551
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449581550}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 3a0bb9b3fecf25c4dbc47ea299cc9426, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1449581552
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449581550}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 96.688065, y: -162.91878, z: 291.33542}
+  m_LocalScale: {x: 24.627802, y: 24.627802, z: 24.627802}
+  m_Children: []
+  m_Father: {fileID: 1557057625}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1465915847
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27695,7 +27917,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1505707496}
   - component: {fileID: 1505707499}
-  - component: {fileID: 1505707498}
   - component: {fileID: 1505707497}
   m_Layer: 0
   m_Name: TextMeshPro
@@ -27815,14 +28036,6 @@ MonoBehaviour:
   _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
---- !u!222 &1505707498
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1505707495}
-  m_CullTransparentMesh: 0
 --- !u!23 &1505707499
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -28180,6 +28393,7 @@ Transform:
   m_LocalPosition: {x: -132.63889, y: 301.7696, z: -1884.9813}
   m_LocalScale: {x: 1.6241808, y: 1.6241808, z: 1.6241808}
   m_Children:
+  - {fileID: 1449581552}
   - {fileID: 1855164652}
   - {fileID: 1293982055}
   - {fileID: 2072001358}
@@ -28488,7 +28702,7 @@ RectTransform:
   m_Children:
   - {fileID: 110802102}
   m_Father: {fileID: 1557057625}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -30739,7 +30953,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1686281649}
   - component: {fileID: 1686281652}
-  - component: {fileID: 1686281651}
   - component: {fileID: 1686281650}
   m_Layer: 0
   m_Name: TextMeshPro
@@ -30859,14 +31072,6 @@ MonoBehaviour:
   _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
---- !u!222 &1686281651
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1686281648}
-  m_CullTransparentMesh: 0
 --- !u!23 &1686281652
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -31103,7 +31308,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1695449094}
   - component: {fileID: 1695449097}
-  - component: {fileID: 1695449096}
   - component: {fileID: 1695449095}
   m_Layer: 0
   m_Name: MainText
@@ -31223,14 +31427,6 @@ MonoBehaviour:
   _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
---- !u!222 &1695449096
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1695449093}
-  m_CullTransparentMesh: 0
 --- !u!23 &1695449097
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -32789,7 +32985,7 @@ RectTransform:
   m_Children:
   - {fileID: 263075304}
   m_Father: {fileID: 1557057625}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -34300,7 +34496,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2006829611}
   - component: {fileID: 2006829614}
-  - component: {fileID: 2006829613}
   - component: {fileID: 2006829612}
   m_Layer: 0
   m_Name: TextMeshPro
@@ -34420,14 +34615,6 @@ MonoBehaviour:
   _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
---- !u!222 &2006829613
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2006829610}
-  m_CullTransparentMesh: 0
 --- !u!23 &2006829614
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -34975,7 +35162,7 @@ RectTransform:
   m_Children:
   - {fileID: 1003754438}
   m_Father: {fileID: 1557057625}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
