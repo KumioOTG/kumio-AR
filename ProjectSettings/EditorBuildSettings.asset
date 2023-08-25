@@ -23,31 +23,31 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/KGO_Tutorial.unity
     guid: 55e11462020496b4c8425ff1384dbe29
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/KGO_AR_Tutorial.unity
     guid: e6d7ff0292301c640ab726d7960b7b71
   - enabled: 0
     path: Assets/Scenes/KGO_AR_Tutorial2.unity
     guid: d00417f1e2c93514b9d5c71336117dc7
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/node0-AR.unity
     guid: 00a34be9049d30642bea8dc0646a791f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/node1-AR.unity
     guid: 2fb5a9f36f4c6e540bf73e871416e614
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/node2-AR.unity
     guid: ada5c7fba87ba5044aeb9795d6fd329d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/node3-AR.unity
     guid: 78a0268c09f47894d815fabc9cda0825
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/node4-AR.unity
     guid: 085f58f803ac2d54eae0f132f741cfcd
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/node5-1-AR.unity
     guid: a5ccd0b3e408214489e44697fdf8774e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/node5-2-AR.unity
     guid: 5ae4275d7e5bcf54484a192936112ca5
   - enabled: 0
