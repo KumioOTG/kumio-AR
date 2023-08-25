@@ -320,7 +320,7 @@ MonoBehaviour:
   proximityType: 3
   executionOrder: 0
   constraintOnRotation: 5
-  useLocalSpaceForConstraint: 0
+  useLocalSpaceForConstraint: 1
 --- !u!114 &2965407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -347,7 +347,7 @@ MonoBehaviour:
   translationHandlesConfiguration: {fileID: 0}
   handleProximityEffectConfiguration: {fileID: 721524006}
   hideElementsInInspector: 1
-  smoothingActive: 1
+  smoothingActive: 0
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   translateLerpTime: 0.001
