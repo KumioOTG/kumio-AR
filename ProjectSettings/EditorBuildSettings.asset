@@ -24,10 +24,10 @@ EditorBuildSettings:
     path: Assets/Scenes/KGO_Tutorial.unity
     guid: 55e11462020496b4c8425ff1384dbe29
   - enabled: 0
-    path: Assets/Scenes/KGO_AR_Tutorial.unity
+    path: Assets/Scenes/KGO_AR_Tutorial-test3.unity
     guid: e6d7ff0292301c640ab726d7960b7b71
   - enabled: 0
-    path: Assets/Scenes/KGO_AR_Tutorial2.unity
+    path: Assets/Scenes/KGO_AR_Tutorial-test2.unity
     guid: d00417f1e2c93514b9d5c71336117dc7
   - enabled: 0
     path: Assets/Scenes/node0-AR.unity
@@ -51,7 +51,7 @@ EditorBuildSettings:
     path: Assets/Scenes/node5-2-AR.unity
     guid: 5ae4275d7e5bcf54484a192936112ca5
   - enabled: 0
-    path: Assets/Scenes/KGO_AR_Tutorial3.unity
+    path: Assets/Scenes/KGO_AR_Tutorial-SON.unity
     guid: c12e2cc5bdf7f9644bc6abc9b1df906a
   - enabled: 0
     path: Assets/Scenes/models_test_AR.unity
