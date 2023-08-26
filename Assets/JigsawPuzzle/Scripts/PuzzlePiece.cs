@@ -28,6 +28,7 @@ public class PuzzlePiece : MonoBehaviour, IDragHandler, IEndDragHandler
         {
             transform.position = correctPosition.transform.position;
             isCorrectlyPlaced = true;
+            JigsawManager.Instance.PlayPiecePlacedSound();  // Play piece placed sound
             JigsawManager.Instance.CheckPuzzleCompletion();
         }
         else
