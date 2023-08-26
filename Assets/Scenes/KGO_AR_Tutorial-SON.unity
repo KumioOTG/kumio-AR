@@ -13446,7 +13446,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 560285683}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.01, y: -0.183, z: 0.6}
+  m_LocalPosition: {x: 0.005000001, y: -0.183, z: 0.618}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 1099210331}
@@ -18066,6 +18066,7 @@ MonoBehaviour:
   currentParentObject: {fileID: 817760188}
   nextParentObject: {fileID: 1060945083}
   successSound: {fileID: 8300000, guid: 8eaea202e0d17fe41972d241845205c5, type: 3}
+  activationDelay: 3
 --- !u!114 &817760190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27897,7 +27898,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4220871538111024, guid: b49e544fea674a3478b96cec622217f3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.01
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: 4220871538111024, guid: b49e544fea674a3478b96cec622217f3, type: 3}
       propertyPath: m_LocalPosition.y
@@ -27905,7 +27906,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4220871538111024, guid: b49e544fea674a3478b96cec622217f3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.595
+      value: 0.613
       objectReference: {fileID: 0}
     - target: {fileID: 4220871538111024, guid: b49e544fea674a3478b96cec622217f3, type: 3}
       propertyPath: m_LocalRotation.w

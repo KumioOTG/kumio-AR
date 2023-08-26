@@ -13,6 +13,9 @@ public class ParentObjectManagerAR1 : MonoBehaviour
     [SerializeField]
     private AudioClip successSound; // The success sound clip to play. Set this in the inspector.
 
+    [SerializeField]
+    private float activationDelay = 1.0f; // Delay in seconds before activating next object and deactivating current object
+
     private AudioSource audioSource; // This will play the sound
 
     private int collectibleCoinCount = 0;
@@ -50,10 +53,18 @@ public class ParentObjectManagerAR1 : MonoBehaviour
                     audioSource.PlayOneShot(successSound);
                 }
 
-                // Deactivate current parent object and activate next parent object
-                if (currentParentObject != null) currentParentObject.SetActive(false);
-                if (nextParentObject != null) nextParentObject.SetActive(true);
+                // Start the activation and deactivation process after the delay
+                StartCoroutine(ActivateNextObject());
             }
         }
+    }
+
+    private IEnumerator ActivateNextObject()
+    {
+        yield return new WaitForSeconds(activationDelay);
+
+        // Deactivate current parent object and activate next parent object
+        if (currentParentObject != null) currentParentObject.SetActive(false);
+        if (nextParentObject != null) nextParentObject.SetActive(true);
     }
 }
