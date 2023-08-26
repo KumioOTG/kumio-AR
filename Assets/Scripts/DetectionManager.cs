@@ -13,6 +13,9 @@ public class DetectionManager : MonoBehaviour
     [SerializeField]
     private GameObject objectToActivate; // The object you want to activate when all are detected.
 
+    [SerializeField]
+    private GameObject objectToDeactivate; // The object you want to deactivate when all are detected.
+
 
     private int detectedCount = 0; // Count of objects that have been detected
 
@@ -56,6 +59,7 @@ public class DetectionManager : MonoBehaviour
         if (detectedCount == detectors.Count)
         {
             objectToActivate.SetActive(true);
+            objectToDeactivate.SetActive(false);
         }
     }
 }
