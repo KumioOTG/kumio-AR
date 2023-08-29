@@ -3,7 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Collectible
+  - PuzzlePiece2
+  - PuzzlePiece7
+  - PuzzlePiece6
+  - PuzzlePiece8
+  - PuzzlePiece3
+  - PuzzlePiece4
+  - PuzzlePiece1
+  - PuzzlePiece5
+  - Target
   layers:
   - Default
   - TransparentFX
@@ -12,13 +22,13 @@ TagManager:
   - Water
   - UI
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - TargetAvrea
+  - TargetSaecla
+  - TargetGerit
+  - TargetQui
+  - TargetPortam
+  - TargetAuro
+  - TargetConsrvit
   - 
   - 
   - 
