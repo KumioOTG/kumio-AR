@@ -2754,7 +2754,7 @@ GameObject:
   - component: {fileID: 93336662}
   - component: {fileID: 93336661}
   m_Layer: 5
-  m_Name: sikke-6-n8.2-consrvit
+  m_Name: sikke-6-n8.2-constrvit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7238,7 +7238,7 @@ GameObject:
   - component: {fileID: 287527182}
   - component: {fileID: 287527181}
   m_Layer: 5
-  m_Name: sikke-1-n0-avrea
+  m_Name: sikke-1-n1-avrea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
