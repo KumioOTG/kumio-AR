@@ -7224,7 +7224,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db4e3a3f1bc39f24a9fa7967588789b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonClickSound: {fileID: 8300000, guid: ed4df74f5a07c42458de4ab760632dac, type: 3}
+  buttonClickSound: {fileID: 8300000, guid: d8bddacca49a3d24a9e18235d29cdebd, type: 3}
 --- !u!1 &287527180
 GameObject:
   m_ObjectHideFlags: 0
@@ -13616,7 +13616,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &559932791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15224,7 +15224,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &654635359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23821,7 +23821,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!223 &918761952
 Canvas:
   m_ObjectHideFlags: 0
