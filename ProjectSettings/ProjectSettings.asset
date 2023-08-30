@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: kumio
-  productName: tutorial test kgo
+  productName: arayuz-test
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -154,7 +154,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.kumio.tutorialtestkgo
+    Android: com.kumio.arayuztest
   buildNumber:
     Standalone: 0
     VisionOS: 0
@@ -701,10 +701,8 @@ PlayerSettings:
   webGLDecompressionFallback: 0
   scriptingDefineSymbols:
     0: ARFOUNDATION_PRESENT;USE_INPUT_SYSTEM_POSE_CONTROL;USE_INPUT_SYSTEM_POSE_CONTROL
-    1: USE_INPUT_SYSTEM_POSE_CONTROL;USE_INPUT_SYSTEM_POSE_CONTROL
     4: ARFOUNDATION_PRESENT
-    7: ARFOUNDATION_PRESENT;USE_INPUT_SYSTEM_POSE_CONTROL;USE_INPUT_SYSTEM_POSE_CONTROL
-    14: USE_INPUT_SYSTEM_POSE_CONTROL;USE_INPUT_SYSTEM_POSE_CONTROL
+    7: ARFOUNDATION_PRESENT
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:
@@ -817,10 +815,10 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: bec92d0d-cada-4e9e-889a-739a663d8d98
+  cloudProjectId: bd75828f-e592-47e8-a340-20b600d7d9ff
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: tutorial test kgo (1)
+  projectName: coins
   organizationId: bgmmorali
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
