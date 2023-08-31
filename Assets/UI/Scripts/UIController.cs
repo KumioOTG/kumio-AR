@@ -108,7 +108,18 @@ public class UIController : MonoBehaviour
         // Handle image click, open or close second-level rectangles
         if (currentOpenRectangle != null)
         {
-            MoveSecondRectangleOut(currentOpenRectangle, true);
+            if (currentOpenRectangle == secondRectangles[imageIndex])
+            {
+                // If the clicked rectangle is already open, close it.
+                MoveSecondRectangleOut(currentOpenRectangle);
+                currentOpenRectangle = null;
+                return;
+            }
+            else
+            {
+                // If another rectangle is open, close it.
+                MoveSecondRectangleOut(currentOpenRectangle, true);
+            }
         }
 
         if (imageIndex >= 0 && imageIndex < secondRectangles.Length)
@@ -117,6 +128,7 @@ public class UIController : MonoBehaviour
             MoveSecondRectangleIn(currentOpenRectangle);
         }
     }
+
 
     #endregion
 

@@ -1,19 +1,32 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 public class ToggleButton : MonoBehaviour
 {
-    public Image targetImage;     // Assign the child Image in inspector
-    public Sprite iconOpened;          // Assign in inspector
-    public Sprite iconCollected;          // Assign in inspector
-    public Sprite disableIcon;    // This will be the sprite used when the controlState is set to 0
+    public static List<ToggleButton> allButtons = new List<ToggleButton>();
+
+    public Image targetImage;
+    public Sprite iconOpened;
+    public Sprite iconCollected;
+    public Sprite disableIcon;
 
     [Header("Control State")]
-    public int controlState = 1;  // 0 = disabled, 1 = normal
+    public int controlState = 1;
 
     private bool isClickedBefore = false;
-    private bool isInitialized = false; // To track if initialization is complete
+    private bool isInitialized = false;
     private Button myButton;
+
+    void Awake()
+    {
+        allButtons.Add(this);
+    }
+
+    void OnDestroy()
+    {
+        allButtons.Remove(this);
+    }
 
     void Start()
     {
@@ -27,11 +40,10 @@ public class ToggleButton : MonoBehaviour
             Debug.LogWarning("No Button component found on this GameObject!");
         }
 
-        // Set initial icon
         if (targetImage != null)
         {
             targetImage.sprite = iconCollected;
-            isInitialized = true; // Set this flag once everything is ready
+            isInitialized = true;
         }
         else
         {
@@ -41,7 +53,7 @@ public class ToggleButton : MonoBehaviour
 
     void Update()
     {
-        if (!isInitialized) return; // Skip the update if we aren't fully initialized
+        if (!isInitialized) return;
 
         if (iconOpened == null)
         {
@@ -79,10 +91,32 @@ public class ToggleButton : MonoBehaviour
 
     void OnButtonClick()
     {
-        if (!isClickedBefore && controlState == 1)
+        if (controlState == 1)
         {
-            targetImage.sprite = iconOpened;
-            isClickedBefore = true;
+            ResetAllButtonsExcept(this);
+
+            if (!isClickedBefore)
+            {
+                targetImage.sprite = iconOpened;
+                isClickedBefore = true;
+            }
+            else
+            {
+                targetImage.sprite = iconCollected;
+                isClickedBefore = false;
+            }
+        }
+    }
+
+    void ResetAllButtonsExcept(ToggleButton exception)
+    {
+        foreach (var button in allButtons)
+        {
+            if (button != exception)
+            {
+                button.targetImage.sprite = button.iconCollected;
+                button.isClickedBefore = false;
+            }
         }
     }
 }

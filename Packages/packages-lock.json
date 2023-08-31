@@ -76,6 +76,12 @@
       "source": "local-tarball",
       "dependencies": {}
     },
+    "com.unity.2d.sprite": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {}
+    },
     "com.unity.ads": {
       "version": "3.7.5",
       "depth": 0,

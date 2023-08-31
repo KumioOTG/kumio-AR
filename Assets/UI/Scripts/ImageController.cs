@@ -11,7 +11,15 @@ public class ImageController : MonoBehaviour
 
     public void ShowInfo(int panelIndex)
     {
-        if (currentActivePanel == panelIndex || isFading) return;
+        if (isFading) return;
+
+        // If the same button is clicked, fade out the current panel and reset the currentActivePanel.
+        if (currentActivePanel == panelIndex)
+        {
+            StartCoroutine(FadeOut(infoPanels[currentActivePanel].GetComponent<CanvasGroup>()));
+            currentActivePanel = -1;
+            return;
+        }
 
         // Start fading out the currently active panel.
         if (currentActivePanel >= 0)
@@ -24,6 +32,7 @@ public class ImageController : MonoBehaviour
 
         currentActivePanel = panelIndex;
     }
+
 
     private IEnumerator FadeIn(CanvasGroup canvasGroup)
     {

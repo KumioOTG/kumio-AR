@@ -10,6 +10,7 @@
     "com.microsoft.mixedreality.toolkit.standardassets": "file:MixedReality/com.microsoft.mixedreality.toolkit.standardassets-2.8.3.tgz",
     "com.microsoft.mixedreality.toolkit.tools": "file:MixedReality/com.microsoft.mixedreality.toolkit.tools-2.8.3.tgz",
     "com.microsoft.spatialaudio.spatializer.unity": "file:MixedReality/com.microsoft.spatialaudio.spatializer.unity-2.0.37.tgz",
+    "com.unity.2d.sprite": "1.0.0",
     "com.unity.ads": "3.7.5",
     "com.unity.ai.navigation": "1.1.4",
     "com.unity.analytics": "3.6.12",
