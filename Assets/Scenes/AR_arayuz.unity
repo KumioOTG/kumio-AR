@@ -1584,6 +1584,7 @@ GameObject:
   - component: {fileID: 38052065}
   - component: {fileID: 38052064}
   - component: {fileID: 38052068}
+  - component: {fileID: 38052069}
   m_Layer: 5
   m_Name: bk2_nokta2
   m_TagString: Untagged
@@ -1671,6 +1672,102 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 28677af72cefd9441841372ebe98fadb, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!82 &38052069
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38052063}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: d5939a6b77e5ed94faed8ad27341ba1e, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -5650,7 +5747,7 @@ MonoBehaviour:
   iconOpened: {fileID: 21300000, guid: 56ac88c48626dcc4481777926d8cbeca, type: 3}
   iconCollected: {fileID: 21300000, guid: 4e5856a2bb3d1e14b82208653244edbb, type: 3}
   disableIcon: {fileID: 21300000, guid: 6675fd815de39b340accf25d1e32cf53, type: 3}
-  controlState: 1
+  controlState: 0
 --- !u!114 &233507638
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7482,7 +7579,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db4e3a3f1bc39f24a9fa7967588789b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonClickSound: {fileID: 8300000, guid: d8bddacca49a3d24a9e18235d29cdebd, type: 3}
+  buttonClickSound: {fileID: 8300000, guid: d2fa6981863bb0743bf6797fed9fc2f8, type: 3}
 --- !u!1 &287527180
 GameObject:
   m_ObjectHideFlags: 0
@@ -10477,7 +10574,7 @@ MonoBehaviour:
   iconOpened: {fileID: 21300000, guid: 56ac88c48626dcc4481777926d8cbeca, type: 3}
   iconCollected: {fileID: 21300000, guid: 4e5856a2bb3d1e14b82208653244edbb, type: 3}
   disableIcon: {fileID: 21300000, guid: 6675fd815de39b340accf25d1e32cf53, type: 3}
-  controlState: 1
+  controlState: 0
 --- !u!114 &384909439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11674,8 +11771,8 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 436998032}
-        m_TargetAssemblyTypeName: UIButtonSound, Assembly-CSharp
-        m_MethodName: PlaySound
+        m_TargetAssemblyTypeName: UIButtonSoundTutorial, Assembly-CSharp
+        m_MethodName: HandleButtonClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11732,10 +11829,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 436998027}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d417c04c18b9aa247b13e54dd0139d19, type: 3}
+  m_Script: {fileID: 11500000, guid: c617e4b38ead99b40bb3a31eca6c1326, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clickSound: {fileID: 8300000, guid: 28cbcb323e8baaf4f8f1a7cfd0ff677d, type: 3}
+  firstClickSound: {fileID: 8300000, guid: 28cbcb323e8baaf4f8f1a7cfd0ff677d, type: 3}
+  secondClickSound: {fileID: 8300000, guid: f8b8641e90be64e479d611c0c733cf7c, type: 3}
 --- !u!1 &438407389
 GameObject:
   m_ObjectHideFlags: 0
@@ -12159,8 +12257,8 @@ GameObject:
   - component: {fileID: 451311517}
   - component: {fileID: 451311516}
   - component: {fileID: 451311515}
-  - component: {fileID: 451311520}
   - component: {fileID: 451311519}
+  - component: {fileID: 451311520}
   m_Layer: 5
   m_Name: bk1_nokta1
   m_TagString: Untagged
@@ -12343,7 +12441,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: bfdf274f0aa6c4a4b9cb871f61b45be4, type: 3}
+  m_audioClip: {fileID: 8300000, guid: d5939a6b77e5ed94faed8ad27341ba1e, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -14000,7 +14098,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &559932791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14095,6 +14193,7 @@ GameObject:
   - component: {fileID: 561411295}
   - component: {fileID: 561411294}
   - component: {fileID: 561411293}
+  - component: {fileID: 561411297}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -14194,6 +14293,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 561411297}
+        m_TargetAssemblyTypeName: UIButtonSoundTutorial, Assembly-CSharp
+        m_MethodName: HandleButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &561411295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14232,6 +14343,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 561411291}
   m_CullTransparentMesh: 1
+--- !u!114 &561411297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561411291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c617e4b38ead99b40bb3a31eca6c1326, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firstClickSound: {fileID: 0}
+  secondClickSound: {fileID: 8300000, guid: d5939a6b77e5ed94faed8ad27341ba1e, type: 3}
 --- !u!1 &561486309
 GameObject:
   m_ObjectHideFlags: 0
@@ -18839,7 +18964,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &749830252
 RectTransform:
   m_ObjectHideFlags: 0
@@ -24396,7 +24521,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!223 &918761952
 Canvas:
   m_ObjectHideFlags: 0
@@ -46877,6 +47002,7 @@ GameObject:
   - component: {fileID: 1926868540}
   - component: {fileID: 1926868539}
   - component: {fileID: 1926868538}
+  - component: {fileID: 1926868542}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -46976,6 +47102,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1926868542}
+        m_TargetAssemblyTypeName: UIButtonSoundTutorial, Assembly-CSharp
+        m_MethodName: HandleButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1926868540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47014,6 +47152,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1926868536}
   m_CullTransparentMesh: 1
+--- !u!114 &1926868542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1926868536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c617e4b38ead99b40bb3a31eca6c1326, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firstClickSound: {fileID: 0}
+  secondClickSound: {fileID: 8300000, guid: d5939a6b77e5ed94faed8ad27341ba1e, type: 3}
 --- !u!1 &1932428977
 GameObject:
   m_ObjectHideFlags: 0
