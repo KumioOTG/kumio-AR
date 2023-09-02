@@ -13,6 +13,9 @@ public class ParentObjectManagerAR1 : MonoBehaviour
     [SerializeField]
     private AudioClip collectionSound; // The sound clip to play. Set this in the inspector.
 
+    [SerializeField]
+    private float activationDelay = 1.0f; // Time delay before activation and deactivation
+
     private AudioSource audioSource; // This will play the sound
 
     private int collectibleCoinCount = 0;
@@ -50,10 +53,17 @@ public class ParentObjectManagerAR1 : MonoBehaviour
                     audioSource.PlayOneShot(collectionSound);
                 }
 
-                // Deactivate current parent object and activate next parent object
-                if (currentParentObject != null) currentParentObject.SetActive(false);
-                if (nextParentObject != null) nextParentObject.SetActive(true);
+                StartCoroutine(ActivateDeactivateObjects());
             }
         }
+    }
+
+    private IEnumerator ActivateDeactivateObjects()
+    {
+        yield return new WaitForSeconds(activationDelay);
+
+        // Deactivate current parent object and activate next parent object
+        if (currentParentObject != null) currentParentObject.SetActive(false);
+        if (nextParentObject != null) nextParentObject.SetActive(true);
     }
 }
