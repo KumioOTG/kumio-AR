@@ -6736,7 +6736,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 181cd563a8349c34ea8978b0bc8d9c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hostTransform: {fileID: 0}
+  hostTransform: {fileID: 278202842}
   manipulationType: 3
   twoHandedManipulationType: 7
   allowFarManipulation: 1
@@ -6938,6 +6938,102 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.033829, y: 3.0866728, z: 1.7544944}
   m_Center: {x: -0.000032275915, y: 0.107640445, z: -0.14282551}
+--- !u!82 &278202852
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 278202843}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: d6cb3549e1d79c344afc6de90f310a08, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &280322975
 GameObject:
   m_ObjectHideFlags: 0
@@ -9015,10 +9111,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 342309866}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d417c04c18b9aa247b13e54dd0139d19, type: 3}
+  m_Script: {fileID: 11500000, guid: c617e4b38ead99b40bb3a31eca6c1326, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clickSound: {fileID: 8300000, guid: 9a5bc8534bc0b9b419fd7d2229f9b6cd, type: 3}
+  firstClickSound: {fileID: 8300000, guid: 9a5bc8534bc0b9b419fd7d2229f9b6cd, type: 3}
+  secondClickSound: {fileID: 8300000, guid: f8b8641e90be64e479d611c0c733cf7c, type: 3}
 --- !u!114 &342309869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9088,8 +9185,8 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 342309868}
-        m_TargetAssemblyTypeName: UIButtonSound, Assembly-CSharp
-        m_MethodName: PlaySound
+        m_TargetAssemblyTypeName: UIButtonSoundTutorial, Assembly-CSharp
+        m_MethodName: HandleButtonClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13576,7 +13673,7 @@ MonoBehaviour:
   iconOpened: {fileID: 21300000, guid: 1db3281a56e18434fa6e7ab22a85bef8, type: 3}
   iconCollected: {fileID: 21300000, guid: 1db3281a56e18434fa6e7ab22a85bef8, type: 3}
   disableIcon: {fileID: 21300000, guid: 0c006d74dad7b1646abb65d722308b25, type: 3}
-  controlState: 1
+  controlState: 0
 --- !u!114 &529530769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17043,6 +17140,7 @@ GameObject:
   - component: {fileID: 699531493}
   - component: {fileID: 699531492}
   - component: {fileID: 699531491}
+  - component: {fileID: 699531495}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -17142,6 +17240,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 699531495}
+        m_TargetAssemblyTypeName: UIButtonSoundTutorial, Assembly-CSharp
+        m_MethodName: HandleButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &699531493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17180,6 +17290,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 699531489}
   m_CullTransparentMesh: 1
+--- !u!114 &699531495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 699531489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c617e4b38ead99b40bb3a31eca6c1326, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firstClickSound: {fileID: 0}
+  secondClickSound: {fileID: 8300000, guid: d5939a6b77e5ed94faed8ad27341ba1e, type: 3}
 --- !u!1 &705261582
 GameObject:
   m_ObjectHideFlags: 0
@@ -23620,6 +23744,7 @@ GameObject:
   - component: {fileID: 917676581}
   - component: {fileID: 917676580}
   - component: {fileID: 917676579}
+  - component: {fileID: 917676583}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -23757,6 +23882,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 917676577}
   m_CullTransparentMesh: 1
+--- !u!114 &917676583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 917676577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c617e4b38ead99b40bb3a31eca6c1326, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firstClickSound: {fileID: 0}
+  secondClickSound: {fileID: 8300000, guid: d5939a6b77e5ed94faed8ad27341ba1e, type: 3}
 --- !u!1 &918450707
 GameObject:
   m_ObjectHideFlags: 0
@@ -28233,7 +28372,7 @@ MonoBehaviour:
   iconOpened: {fileID: 21300000, guid: 56ac88c48626dcc4481777926d8cbeca, type: 3}
   iconCollected: {fileID: 21300000, guid: 4e5856a2bb3d1e14b82208653244edbb, type: 3}
   disableIcon: {fileID: 21300000, guid: 6675fd815de39b340accf25d1e32cf53, type: 3}
-  controlState: 1
+  controlState: 0
 --- !u!114 &1109156796
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29562,7 +29701,7 @@ MonoBehaviour:
   iconOpened: {fileID: 21300000, guid: 094b72a8c7a4ec445a18e4f18d61eda8, type: 3}
   iconCollected: {fileID: 21300000, guid: 094b72a8c7a4ec445a18e4f18d61eda8, type: 3}
   disableIcon: {fileID: 21300000, guid: 9ac6b720f6ce01b41aa29b648b46ddbf, type: 3}
-  controlState: 1
+  controlState: 0
 --- !u!114 &1156015824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34279,7 +34418,7 @@ MonoBehaviour:
   iconOpened: {fileID: 21300000, guid: 56ac88c48626dcc4481777926d8cbeca, type: 3}
   iconCollected: {fileID: 21300000, guid: 4e5856a2bb3d1e14b82208653244edbb, type: 3}
   disableIcon: {fileID: 21300000, guid: 6675fd815de39b340accf25d1e32cf53, type: 3}
-  controlState: 1
+  controlState: 0
 --- !u!114 &1341490937
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35939,6 +36078,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1449581552}
   - component: {fileID: 1449581551}
+  - component: {fileID: 1449581553}
   m_Layer: 0
   m_Name: Sound (2)
   m_TagString: Untagged
@@ -36056,6 +36196,102 @@ Transform:
   m_Father: {fileID: 1557057625}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1449581553
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449581550}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: eaad0078ae1e96f45a7a0dc20392079e, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1457100971
 GameObject:
   m_ObjectHideFlags: 0
