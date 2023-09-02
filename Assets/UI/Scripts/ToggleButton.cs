@@ -2,37 +2,23 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
 
+
+
 public class ToggleButton : MonoBehaviour
 {
-    public static List<ToggleButton> allButtons = new List<ToggleButton>();
-
     public Image targetImage;
-    public Sprite iconOpened;
     public Sprite iconCollected;
-    public Sprite disableIcon;
+    public Sprite iconNotCollected;
 
-    [Header("Control State")]
-    public int controlState = 1;
+    public string associatedCoinID;
 
-    private bool isClickedBefore = false;
-    private bool isInitialized = false;
     private Button myButton;
-
-    void Awake()
-    {
-        allButtons.Add(this);
-    }
-
-    void OnDestroy()
-    {
-        allButtons.Remove(this);
-    }
 
     void Start()
     {
-        if (GetComponent<Button>() != null)
+        myButton = GetComponent<Button>();
+        if (myButton != null)
         {
-            myButton = GetComponent<Button>();
             myButton.onClick.AddListener(OnButtonClick);
         }
         else
@@ -40,83 +26,38 @@ public class ToggleButton : MonoBehaviour
             Debug.LogWarning("No Button component found on this GameObject!");
         }
 
-        if (targetImage != null)
+        UpdateIcon();
+    }
+
+    void UpdateIcon()
+    {
+        if (InventoryManager2.Instance.IsObjectCollected(associatedCoinID))
         {
             targetImage.sprite = iconCollected;
-            isInitialized = true;
         }
         else
         {
-            Debug.LogWarning("Target Image is not assigned in the inspector!");
+            targetImage.sprite = iconNotCollected;
         }
     }
 
-    void Update()
+    public void OnButtonClick()
     {
-        if (!isInitialized) return;
-
-        if (iconOpened == null)
+        GameObject coin = GameObject.Find(associatedCoinID);
+        if (coin != null)
         {
-            Debug.LogWarning("Icon A sprite is not assigned in the inspector!");
-            return;
-        }
-
-        if (iconCollected == null)
-        {
-            Debug.LogWarning("Icon B sprite is not assigned in the inspector!");
-            return;
-        }
-
-        if (disableIcon == null)
-        {
-            Debug.LogWarning("Disable Icon sprite is not assigned in the inspector!");
-            return;
-        }
-
-        switch (controlState)
-        {
-            case 0:
-                targetImage.sprite = disableIcon;
-                if (myButton != null) myButton.interactable = false;
-                break;
-            case 1:
-                if (!isClickedBefore) targetImage.sprite = iconCollected;
-                if (myButton != null) myButton.interactable = true;
-                break;
-            default:
-                Debug.LogWarning("Invalid controlState value");
-                break;
-        }
-    }
-
-    void OnButtonClick()
-    {
-        if (controlState == 1)
-        {
-            ResetAllButtonsExcept(this);
-
-            if (!isClickedBefore)
+            if (!InventoryManager2.Instance.IsObjectCollected(associatedCoinID))
             {
-                targetImage.sprite = iconOpened;
-                isClickedBefore = true;
+                coin.SetActive(true);
             }
             else
             {
-                targetImage.sprite = iconCollected;
-                isClickedBefore = false;
+                Debug.Log("Coin already collected!");
             }
         }
-    }
-
-    void ResetAllButtonsExcept(ToggleButton exception)
-    {
-        foreach (var button in allButtons)
+        else
         {
-            if (button != exception)
-            {
-                button.targetImage.sprite = button.iconCollected;
-                button.isClickedBefore = false;
-            }
+            Debug.LogWarning("Coin not found!");
         }
     }
 }

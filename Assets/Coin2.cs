@@ -2,10 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Coin : MonoBehaviour
+public class Coin2 : MonoBehaviour
 {
     [SerializeField]
     private GameObject objectToCollect;
+
+    [SerializeField]
+    private GameObject nextButton;
+
 
     [SerializeField]
     private GameObject soundPrefab; // Set this prefab in the inspector
@@ -15,7 +19,10 @@ public class Coin : MonoBehaviour
     private float tapTimeLimit = 0.5f;
     private float lastTapTime = 0f;
 
-    public string coinID;
+    private void Start()
+    {
+        // Other initialization code if needed
+    }
 
     private void Update()
     {
@@ -52,7 +59,7 @@ public class Coin : MonoBehaviour
             isCollected = true;
 
             // Add object to inventory
-            InventoryManager2.Instance.AddCollectableObject(coinID, objectToCollect);
+            InventoryManager.Instance.AddCollectableObject(objectToCollect);
 
             // Play collect sound
             if (soundPrefab != null)
@@ -63,8 +70,10 @@ public class Coin : MonoBehaviour
                 Destroy(soundInstance, audioSource.clip.length);
             }
 
-            // Deactivate the game object
-            objectToCollect.SetActive(false);
+            // Optionally, you can destroy the game object or make it inactive
+            Destroy(objectToCollect);
+            UnityEngine.Debug.Log("Destroyed " + objectToCollect.name);
+            nextButton.SetActive(true);
         }
     }
 }
