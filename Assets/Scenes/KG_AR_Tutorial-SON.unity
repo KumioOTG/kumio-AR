@@ -4835,6 +4835,7 @@ GameObject:
   - component: {fileID: 283078627}
   - component: {fileID: 283078630}
   - component: {fileID: 283078631}
+  - component: {fileID: 283078632}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -4953,6 +4954,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 283078632}
+        m_TargetAssemblyTypeName: UIButtonSoundTutorial, Assembly-CSharp
+        m_MethodName: HandleButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &283078628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4998,7 +5011,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 283078625}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5ecb8fad79103764c9995fa60d121148, type: 3}
   m_Name: 
@@ -5019,6 +5032,20 @@ MonoBehaviour:
   objectToActivate: {fileID: 317839833}
   objectToDeactivate: {fileID: 1999707927}
   delayTime: 2
+--- !u!114 &283078632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 283078625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c617e4b38ead99b40bb3a31eca6c1326, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firstClickSound: {fileID: 8300000, guid: d2fa6981863bb0743bf6797fed9fc2f8, type: 3}
+  secondClickSound: {fileID: 0}
 --- !u!1 &293394363
 GameObject:
   m_ObjectHideFlags: 0
