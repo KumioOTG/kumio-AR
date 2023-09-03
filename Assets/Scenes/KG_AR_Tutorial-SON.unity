@@ -3839,10 +3839,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetImage: {fileID: 691112363}
-  iconOpened: {fileID: 21300000, guid: b6f89c4ca5fa52f4aa1b53b82602ea5b, type: 3}
+  iconOpened: {fileID: 0}
   iconCollected: {fileID: 21300000, guid: b6f89c4ca5fa52f4aa1b53b82602ea5b, type: 3}
-  disableIcon: {fileID: 21300000, guid: cbfa95a357177944bbb3a1061a7bc515, type: 3}
-  controlState: 0
+  disableIcon: {fileID: 0}
+  controlState: 1
 --- !u!114 &253326461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6686,9 +6686,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetImage: {fileID: 503629298}
-  iconOpened: {fileID: 21300000, guid: b6f89c4ca5fa52f4aa1b53b82602ea5b, type: 3}
+  iconOpened: {fileID: 0}
   iconCollected: {fileID: 21300000, guid: b6f89c4ca5fa52f4aa1b53b82602ea5b, type: 3}
-  disableIcon: {fileID: 21300000, guid: cbfa95a357177944bbb3a1061a7bc515, type: 3}
+  disableIcon: {fileID: 0}
   controlState: 1
 --- !u!114 &387330882
 MonoBehaviour:
@@ -8634,9 +8634,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetImage: {fileID: 1683146423}
-  iconOpened: {fileID: 21300000, guid: 094b72a8c7a4ec445a18e4f18d61eda8, type: 3}
+  iconOpened: {fileID: 0}
   iconCollected: {fileID: 21300000, guid: 094b72a8c7a4ec445a18e4f18d61eda8, type: 3}
-  disableIcon: {fileID: 21300000, guid: 9ac6b720f6ce01b41aa29b648b46ddbf, type: 3}
+  disableIcon: {fileID: 0}
   controlState: 1
 --- !u!114 &517188695
 MonoBehaviour:
@@ -11870,9 +11870,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetImage: {fileID: 1698313138}
-  iconOpened: {fileID: 21300000, guid: 1db3281a56e18434fa6e7ab22a85bef8, type: 3}
+  iconOpened: {fileID: 0}
   iconCollected: {fileID: 21300000, guid: 1db3281a56e18434fa6e7ab22a85bef8, type: 3}
-  disableIcon: {fileID: 21300000, guid: 0c006d74dad7b1646abb65d722308b25, type: 3}
+  disableIcon: {fileID: 0}
   controlState: 1
 --- !u!114 &754843960
 MonoBehaviour:
@@ -12218,9 +12218,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetImage: {fileID: 1606538706}
-  iconOpened: {fileID: 21300000, guid: b6f89c4ca5fa52f4aa1b53b82602ea5b, type: 3}
+  iconOpened: {fileID: 0}
   iconCollected: {fileID: 21300000, guid: b6f89c4ca5fa52f4aa1b53b82602ea5b, type: 3}
-  disableIcon: {fileID: 21300000, guid: cbfa95a357177944bbb3a1061a7bc515, type: 3}
+  disableIcon: {fileID: 0}
   controlState: 1
 --- !u!114 &830317577
 MonoBehaviour:
@@ -13156,10 +13156,10 @@ RectTransform:
   m_Father: {fileID: 559932794}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 1465, y: 975}
-  m_SizeDelta: {x: 3118.4272, y: 1754.1152}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -889}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &918761949
 MonoBehaviour:
@@ -16733,9 +16733,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetImage: {fileID: 1825933470}
-  iconOpened: {fileID: 21300000, guid: b6f89c4ca5fa52f4aa1b53b82602ea5b, type: 3}
+  iconOpened: {fileID: 0}
   iconCollected: {fileID: 21300000, guid: b6f89c4ca5fa52f4aa1b53b82602ea5b, type: 3}
-  disableIcon: {fileID: 21300000, guid: cbfa95a357177944bbb3a1061a7bc515, type: 3}
+  disableIcon: {fileID: 0}
   controlState: 1
 --- !u!114 &1288707554
 MonoBehaviour:
@@ -18182,10 +18182,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetImage: {fileID: 1473854248}
-  iconOpened: {fileID: 21300000, guid: b6f89c4ca5fa52f4aa1b53b82602ea5b, type: 3}
+  iconOpened: {fileID: 0}
   iconCollected: {fileID: 21300000, guid: b6f89c4ca5fa52f4aa1b53b82602ea5b, type: 3}
-  disableIcon: {fileID: 21300000, guid: cbfa95a357177944bbb3a1061a7bc515, type: 3}
-  controlState: 0
+  disableIcon: {fileID: 0}
+  controlState: 1
 --- !u!114 &1464599901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18628,9 +18628,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetImage: {fileID: 34912727}
-  iconOpened: {fileID: 21300000, guid: 6e3ec7693cb6855448ed35b2b8841049, type: 3}
+  iconOpened: {fileID: 0}
   iconCollected: {fileID: 21300000, guid: 6e3ec7693cb6855448ed35b2b8841049, type: 3}
-  disableIcon: {fileID: 21300000, guid: 601833500795c0441ac2af71af04cfd1, type: 3}
+  disableIcon: {fileID: 0}
   controlState: 1
 --- !u!114 &1479118060
 MonoBehaviour:
@@ -20828,9 +20828,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetImage: {fileID: 1309027213}
-  iconOpened: {fileID: 21300000, guid: a639f75215c756b4c8d4810504c429f4, type: 3}
+  iconOpened: {fileID: 0}
   iconCollected: {fileID: 21300000, guid: a639f75215c756b4c8d4810504c429f4, type: 3}
-  disableIcon: {fileID: 21300000, guid: 2d03bec709c68b64fba4049bfab4bc6f, type: 3}
+  disableIcon: {fileID: 0}
   controlState: 1
 --- !u!114 &1657373984
 MonoBehaviour:
@@ -21039,9 +21039,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetImage: {fileID: 190763442}
-  iconOpened: {fileID: 21300000, guid: b6f89c4ca5fa52f4aa1b53b82602ea5b, type: 3}
+  iconOpened: {fileID: 0}
   iconCollected: {fileID: 21300000, guid: b6f89c4ca5fa52f4aa1b53b82602ea5b, type: 3}
-  disableIcon: {fileID: 21300000, guid: cbfa95a357177944bbb3a1061a7bc515, type: 3}
+  disableIcon: {fileID: 0}
   controlState: 1
 --- !u!114 &1668705456
 MonoBehaviour:
