@@ -59,13 +59,13 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/KGO Rota/node9-2-AR.unity
     guid: 8e852c88ccba137419b345224758347e
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/KG_AR_Tutorial-SON.unity
     guid: 16de1c5caa7043649a40ec43cfcb3788
   - enabled: 0
     path: Assets/Scenes/JigsawPuzzle_scene.unity
     guid: faba42091c899094bb11c0c2ffeaff5c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/AR_arayuz.unity
     guid: 18654d7ba3eaa544a85602c9aaa3c1fe
   m_configObjects:
