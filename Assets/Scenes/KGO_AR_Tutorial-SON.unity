@@ -13739,8 +13739,6 @@ GameObject:
   - component: {fileID: 560285687}
   - component: {fileID: 560285686}
   - component: {fileID: 560285685}
-  - component: {fileID: 560285690}
-  - component: {fileID: 560285689}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -13769,12 +13767,68 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 560285683}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bee4e15cdc46aae40860cd735efc7649, type: 3}
+  m_Script: {fileID: 11500000, guid: 92eb33abce09fe74f9aa30f9d5aef505, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetGameObject: {fileID: 0}
+  targetLayers:
+    serializedVersion: 2
+    m_Bits: 128
+  onObjectEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1043503847}
+        m_TargetAssemblyTypeName: MaterialChanger, Assembly-CSharp
+        m_MethodName: ChangeToMaterial1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 332574120}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 332574122}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onObjectExit:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1043503847}
+        m_TargetAssemblyTypeName: MaterialChanger, Assembly-CSharp
+        m_MethodName: ChangeToMaterial2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!135 &560285686
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -13837,94 +13891,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 560285683}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &560285689
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 560285683}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ea0e40106f346e498542afbcde3ab3a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetTag: Target
-  detectionRadius: 0.5
-  onObjectEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  onObjectExit:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &560285690
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 560285683}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ea0e40106f346e498542afbcde3ab3a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetTag: Target
-  detectionRadius: 0.3
-  onObjectEnter:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1043503847}
-        m_TargetAssemblyTypeName: MaterialChanger, Assembly-CSharp
-        m_MethodName: ChangeToMaterial1
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 332574120}
-        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 332574122}
-        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onObjectExit:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1043503847}
-        m_TargetAssemblyTypeName: MaterialChanger, Assembly-CSharp
-        m_MethodName: ChangeToMaterial2
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &562338511
 GameObject:
   m_ObjectHideFlags: 0
@@ -22890,6 +22856,7 @@ GameObject:
   - component: {fileID: 1060945084}
   - component: {fileID: 1060945089}
   - component: {fileID: 1060945085}
+  - component: {fileID: 1060945090}
   m_Layer: 0
   m_Name: MixedRealitySceneContent2
   m_TagString: Untagged
@@ -23003,7 +22970,7 @@ MonoBehaviour:
   nextParent: {fileID: 1927721333}
   currentParent: {fileID: 1060945083}
   delayInSeconds: 4
-  objectDetector: {fileID: 560285690}
+  objectDetector: {fileID: 0}
 --- !u!114 &1060945088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23035,6 +23002,22 @@ MonoBehaviour:
   additionalOffset: {x: 0, y: 0, z: 0}
   additionalRotation: {x: 0, y: 0, z: 0}
   updateSolvers: 1
+--- !u!114 &1060945090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1060945083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42cb5d283ea2e314a8b756ef0e21c811, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextParent: {fileID: 1927721333}
+  currentParent: {fileID: 1060945083}
+  delayInSeconds: 2
+  puzzleDetector: {fileID: 560285685}
 --- !u!1 &1068369879
 GameObject:
   m_ObjectHideFlags: 0
@@ -23164,9 +23147,9 @@ GameObject:
   - component: {fileID: 1095402636}
   - component: {fileID: 1095402635}
   - component: {fileID: 1095402634}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Sikke
-  m_TagString: Target
+  m_TagString: Collectible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
