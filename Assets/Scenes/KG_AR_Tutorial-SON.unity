@@ -3387,7 +3387,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToDeactivate: {fileID: 215185701}
-  objectToActivate: {fileID: 1060945083}
+  objectToActivate: {fileID: 1999707927}
   delay: 1
 --- !u!114 &244835116
 MonoBehaviour:
@@ -7693,7 +7693,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &464780903
 Transform:
   m_ObjectHideFlags: 0
