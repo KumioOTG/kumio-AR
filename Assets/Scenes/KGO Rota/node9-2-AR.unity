@@ -901,13 +901,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scaleDuration: 1
-  numberOfFullRotations: 3
-  rotationTime: 1
-  waitTime: 1
+  numberOfFullRotations: 1
+  rotationTime: 0
+  waitTime: 0
   endingRotationAngles: {x: 0, y: 0, z: 0}
   rotationAxis: 1
-  clickRotationAngle: 180
-  rotateBackAfterClick: 1
+  clickRotationAngle: 0
+  rotateBackAfterClick: 0
 --- !u!114 &15793625
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8736,13 +8736,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scaleDuration: 1
-  numberOfFullRotations: 3
-  rotationTime: 1
-  waitTime: 1
+  numberOfFullRotations: 1
+  rotationTime: 0
+  waitTime: 0
   endingRotationAngles: {x: 0, y: 0, z: 0}
   rotationAxis: 1
-  clickRotationAngle: 180
-  rotateBackAfterClick: 1
+  clickRotationAngle: 0
+  rotateBackAfterClick: 0
 --- !u!114 &880480141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9301,13 +9301,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scaleDuration: 1
-  numberOfFullRotations: 3
-  rotationTime: 1
-  waitTime: 1
+  numberOfFullRotations: 1
+  rotationTime: 0
+  waitTime: 0
   endingRotationAngles: {x: 0, y: 0, z: 0}
   rotationAxis: 1
-  clickRotationAngle: 180
-  rotateBackAfterClick: 1
+  clickRotationAngle: 0
+  rotateBackAfterClick: 0
 --- !u!114 &918450712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9993,13 +9993,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scaleDuration: 1
-  numberOfFullRotations: 3
-  rotationTime: 1
-  waitTime: 1
+  numberOfFullRotations: 1
+  rotationTime: 0
+  waitTime: 0
   endingRotationAngles: {x: 0, y: 0, z: 0}
   rotationAxis: 1
-  clickRotationAngle: 180
-  rotateBackAfterClick: 1
+  clickRotationAngle: 0
+  rotateBackAfterClick: 0
 --- !u!114 &972305738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11427,13 +11427,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scaleDuration: 1
-  numberOfFullRotations: 3
-  rotationTime: 1
-  waitTime: 1
+  numberOfFullRotations: 1
+  rotationTime: 0
+  waitTime: 0
   endingRotationAngles: {x: 0, y: 0, z: 0}
   rotationAxis: 1
-  clickRotationAngle: 180
-  rotateBackAfterClick: 1
+  clickRotationAngle: 0
+  rotateBackAfterClick: 0
 --- !u!114 &1095402646
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12259,13 +12259,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scaleDuration: 1
-  numberOfFullRotations: 3
-  rotationTime: 1
-  waitTime: 1
+  numberOfFullRotations: 1
+  rotationTime: 0
+  waitTime: 0
   endingRotationAngles: {x: 0, y: 0, z: 0}
   rotationAxis: 1
-  clickRotationAngle: 180
-  rotateBackAfterClick: 1
+  clickRotationAngle: 0
+  rotateBackAfterClick: 0
 --- !u!114 &1157415748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13346,13 +13346,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scaleDuration: 1
-  numberOfFullRotations: 3
-  rotationTime: 1
-  waitTime: 1
+  numberOfFullRotations: 1
+  rotationTime: 0
+  waitTime: 0
   endingRotationAngles: {x: 0, y: 0, z: 0}
   rotationAxis: 1
-  clickRotationAngle: 180
-  rotateBackAfterClick: 1
+  clickRotationAngle: 0
+  rotateBackAfterClick: 0
 --- !u!114 &1300900399
 MonoBehaviour:
   m_ObjectHideFlags: 0
