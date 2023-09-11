@@ -6,30 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Samples/Mixed Reality Toolkit Foundation/2.8.3/Scene System Resources/DefaultManagerScene.unity
-    guid: ae7bb08d297fb69408695d8de0962524
-  - enabled: 0
-    path: Assets/Samples/Mixed Reality Toolkit Foundation/2.8.3/Scene System Resources/DefaultLightingScene.unity
-    guid: 7e54e36c44f826c438c95da79f8de638
-  - enabled: 0
-    path: Assets/Samples/Mixed Reality Toolkit Foundation/2.8.3/Scene System Resources/DefaultLightingScene.unity
-    guid: 7e54e36c44f826c438c95da79f8de638
-  - enabled: 0
-    path: Assets/Samples/Mixed Reality Toolkit Foundation/2.8.3/Scene System Resources/DefaultLightingScene.unity
-    guid: 7e54e36c44f826c438c95da79f8de638
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
     path: Assets/Scenes/KGO Rota/node0-AR.unity
     guid: 00a34be9049d30642bea8dc0646a791f
   - enabled: 0
