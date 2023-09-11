@@ -2974,7 +2974,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3265844208835655128, guid: 49ff9a55c296801468e84f70d0bb6841, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3265844208835655128, guid: 49ff9a55c296801468e84f70d0bb6841, type: 3}
       propertyPath: m_LocalPosition.x
@@ -26083,6 +26083,7 @@ GameObject:
   - component: {fileID: 1309017401}
   - component: {fileID: 1309017400}
   - component: {fileID: 1309017399}
+  - component: {fileID: 1309017403}
   - component: {fileID: 1309017398}
   - component: {fileID: 1309017403}
   m_Layer: 5
@@ -31207,7 +31208,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 13.0906, y: 6.030937}
+  m_AnchoredPosition: {x: 13.090576, y: 6.030937}
   m_SizeDelta: {x: 3203.8975, y: 1811.0042}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1634330726
@@ -33792,7 +33793,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1817948404}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -33883,7 +33884,7 @@ Canvas:
   m_GameObject: {fileID: 1817948404}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 2
+  m_RenderMode: 1
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
