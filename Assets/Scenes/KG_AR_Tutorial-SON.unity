@@ -764,7 +764,7 @@ RectTransform:
   m_LocalScale: {x: 0.0064073736, y: 0.0064073736, z: 0.0064073736}
   m_Children: []
   m_Father: {fileID: 1999707934}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2686,7 +2686,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &215185702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3241,11 +3241,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 244835112}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c98bb01229b7c3d4488ef5c84570f0c4, type: 3}
+  m_Script: {fileID: 11500000, guid: e875301d28c056c41a7f54f0ca66d3de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   objectToDeactivate: {fileID: 215185701}
-  objectToActivate: {fileID: 1999707927}
+  objectToActivate1: {fileID: 559932790}
+  objectToActivate2: {fileID: 1999707927}
   delay: 1
 --- !u!114 &244835116
 MonoBehaviour:
@@ -3395,7 +3396,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 244835114}
-        m_TargetAssemblyTypeName: SwitchObjectsButton, Assembly-CSharp
+        m_TargetAssemblyTypeName: SwitchObjectsButton2, Assembly-CSharp
         m_MethodName: SwitchObjectsDelayed
         m_Mode: 1
         m_Arguments:
@@ -3540,7 +3541,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 244835114}
-        m_TargetAssemblyTypeName: SwitchObjectsButton, Assembly-CSharp
+        m_TargetAssemblyTypeName: SwitchObjectsButton2, Assembly-CSharp
         m_MethodName: SwitchObjectsDelayed
         m_Mode: 1
         m_Arguments:
@@ -4694,6 +4695,7 @@ GameObject:
   - component: {fileID: 283078630}
   - component: {fileID: 283078631}
   - component: {fileID: 283078632}
+  - component: {fileID: 283078633}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -4882,7 +4884,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 283078625}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1c058fd10578984aa323256f4001d91, type: 3}
   m_Name: 
@@ -4904,6 +4906,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firstClickSound: {fileID: 8300000, guid: d2fa6981863bb0743bf6797fed9fc2f8, type: 3}
   secondClickSound: {fileID: 0}
+--- !u!114 &283078633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 283078625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85c484aab675af24596ea192dc81d66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 317839833}
+  objectToDeactivate1: {fileID: 1999707927}
+  objectToDeactivate2: {fileID: 559932790}
+  delayTime: 2
 --- !u!1 &293394363
 GameObject:
   m_ObjectHideFlags: 0
@@ -5270,7 +5288,7 @@ Transform:
   m_Children:
   - {fileID: 938694067}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &317839836
 AudioSource:
@@ -7344,7 +7362,7 @@ Transform:
   - {fileID: 1862305515}
   - {fileID: 1404617093}
   m_Father: {fileID: 1999707934}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &464780904
 MonoBehaviour:
@@ -7959,7 +7977,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &499939293
 GameObject:
@@ -8083,7 +8101,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &503629296
 GameObject:
@@ -9448,7 +9466,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &559932791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9522,8 +9540,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 918761948}
-  m_Father: {fileID: 1999707934}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -12695,7 +12713,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1999707934}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1041056032
 AudioSource:
@@ -18656,7 +18674,7 @@ Transform:
   - {fileID: 429252146}
   - {fileID: 731932754}
   m_Father: {fileID: 1999707934}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1833981610
 MonoBehaviour:
@@ -19840,7 +19858,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1999707928
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19848,7 +19866,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1999707927}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4479a0bd44d822241a4c5f4890c481c0, type: 3}
   m_Name: 
@@ -19887,7 +19905,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1999707927}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b55691ad5b034fe6966763a6e23818d2, type: 3}
   m_Name: 
@@ -19990,14 +20008,13 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 559932794}
   - {fileID: 1041056031}
   - {fileID: 45084775}
   - {fileID: 1833981609}
   - {fileID: 464780903}
   - {fileID: 168476540}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2003634296
 PrefabInstance:
