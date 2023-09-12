@@ -311,7 +311,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 296809403}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 39.1, y: 0.1191345, z: 38.3}
+  m_LocalPosition: {x: 1, y: -1.2, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1617858714}
@@ -712,15 +712,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6200720779110778461, guid: 1083f87f08232f541942f4a22a00127e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -37.63
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6200720779110778461, guid: 1083f87f08232f541942f4a22a00127e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.86
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6200720779110778461, guid: 1083f87f08232f541942f4a22a00127e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -36.19
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6200720779110778461, guid: 1083f87f08232f541942f4a22a00127e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1476,7 +1476,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1617858713}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -38.15, y: -0.1901345, z: -38.18}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2105499123}
@@ -2550,6 +2550,7 @@ GameObject:
   - component: {fileID: 2105499133}
   - component: {fileID: 2105499134}
   - component: {fileID: 2105499135}
+  - component: {fileID: 2105499136}
   m_Layer: 7
   m_Name: Sikke-avrea
   m_TagString: Collectible
@@ -2565,7 +2566,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2105499122}
   m_LocalRotation: {x: -0, y: -1, z: -0.00000008940697, w: 0}
-  m_LocalPosition: {x: -0.574, y: 0.231, z: 0.36}
+  m_LocalPosition: {x: 0, y: 1.048, z: 0}
   m_LocalScale: {x: 20, y: 20, z: 20}
   m_Children: []
   m_Father: {fileID: 1617858714}
@@ -2694,7 +2695,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToCollect: {fileID: 2105499122}
   nextButton: {fileID: 0}
-  soundPrefab: {fileID: 0}
+  soundPrefab: {fileID: 102391823}
 --- !u!114 &2105499131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2915,6 +2916,21 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &2105499136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105499122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2134bdfcbe1ca6c4db093e2bd7b98773, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetObjects:
+  - {fileID: 2105499122}
+  delayInSeconds: 7
 --- !u!1 &2124803459
 GameObject:
   m_ObjectHideFlags: 0

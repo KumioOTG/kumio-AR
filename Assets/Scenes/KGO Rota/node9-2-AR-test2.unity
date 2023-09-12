@@ -235,8 +235,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToCollect: {fileID: 871132}
+  nextButton: {fileID: 0}
   soundPrefab: {fileID: 0}
-  coinID: 
 --- !u!114 &871137
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -886,8 +886,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToCollect: {fileID: 1710587191}
+  nextButton: {fileID: 0}
   soundPrefab: {fileID: 1732297976}
-  coinID: 
 --- !u!114 &15793624
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -963,7 +963,7 @@ Rigidbody:
   m_Drag: 20
   m_AngularDrag: 20
   m_UseGravity: 0
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 1
   m_Constraints: 80
   m_CollisionDetection: 0
@@ -1386,8 +1386,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToCollect: {fileID: 20218296}
+  nextButton: {fileID: 0}
   soundPrefab: {fileID: 0}
-  coinID: 
 --- !u!114 &20218303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6931,8 +6931,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToCollect: {fileID: 664709462}
+  nextButton: {fileID: 0}
   soundPrefab: {fileID: 0}
-  coinID: 
 --- !u!114 &664709469
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8721,8 +8721,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToCollect: {fileID: 1710587191}
+  nextButton: {fileID: 0}
   soundPrefab: {fileID: 1732297976}
-  coinID: 
 --- !u!114 &880480140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8798,7 +8798,7 @@ Rigidbody:
   m_Drag: 20
   m_AngularDrag: 20
   m_UseGravity: 0
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 1
   m_Constraints: 80
   m_CollisionDetection: 0
@@ -9286,8 +9286,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToCollect: {fileID: 1710587191}
+  nextButton: {fileID: 0}
   soundPrefab: {fileID: 1732297976}
-  coinID: 
 --- !u!114 &918450711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9363,7 +9363,7 @@ Rigidbody:
   m_Drag: 20
   m_AngularDrag: 20
   m_UseGravity: 0
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 1
   m_Constraints: 80
   m_CollisionDetection: 0
@@ -9978,8 +9978,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToCollect: {fileID: 1710587191}
+  nextButton: {fileID: 0}
   soundPrefab: {fileID: 1732297976}
-  coinID: 
 --- !u!114 &972305737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10055,7 +10055,7 @@ Rigidbody:
   m_Drag: 20
   m_AngularDrag: 20
   m_UseGravity: 0
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 1
   m_Constraints: 80
   m_CollisionDetection: 0
@@ -11176,7 +11176,7 @@ Rigidbody:
   m_Drag: 20
   m_AngularDrag: 20
   m_UseGravity: 0
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 1
   m_Constraints: 80
   m_CollisionDetection: 0
@@ -11412,8 +11412,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToCollect: {fileID: 1710587191}
+  nextButton: {fileID: 0}
   soundPrefab: {fileID: 1732297976}
-  coinID: 
 --- !u!114 &1095402645
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12244,8 +12244,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToCollect: {fileID: 1710587191}
+  nextButton: {fileID: 0}
   soundPrefab: {fileID: 1732297976}
-  coinID: 
 --- !u!114 &1157415747
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12321,7 +12321,7 @@ Rigidbody:
   m_Drag: 20
   m_AngularDrag: 20
   m_UseGravity: 0
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 1
   m_Constraints: 80
   m_CollisionDetection: 0
@@ -12959,8 +12959,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToCollect: {fileID: 1251263476}
+  nextButton: {fileID: 0}
   soundPrefab: {fileID: 1131921657}
-  coinID: 
 --- !u!114 &1251263478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13331,8 +13331,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToCollect: {fileID: 1710587191}
+  nextButton: {fileID: 0}
   soundPrefab: {fileID: 1732297976}
-  coinID: 
 --- !u!114 &1300900398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13408,7 +13408,7 @@ Rigidbody:
   m_Drag: 20
   m_AngularDrag: 20
   m_UseGravity: 0
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 1
   m_Constraints: 80
   m_CollisionDetection: 0
@@ -16543,8 +16543,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToCollect: {fileID: 1658434418}
+  nextButton: {fileID: 0}
   soundPrefab: {fileID: 0}
-  coinID: 
 --- !u!114 &1658434425
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16874,8 +16874,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToCollect: {fileID: 1664307081}
+  nextButton: {fileID: 0}
   soundPrefab: {fileID: 1732297976}
-  coinID: 
 --- !u!65 &1664307085
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17838,8 +17838,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToCollect: {fileID: 1710587191}
+  nextButton: {fileID: 0}
   soundPrefab: {fileID: 1732297976}
-  coinID: 
 --- !u!65 &1710587196
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19089,8 +19089,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToCollect: {fileID: 1813626254}
+  nextButton: {fileID: 0}
   soundPrefab: {fileID: 1131921657}
-  coinID: 
 --- !u!114 &1813626256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22109,8 +22109,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToCollect: {fileID: 2049747614}
+  nextButton: {fileID: 0}
   soundPrefab: {fileID: 0}
-  coinID: 
 --- !u!114 &2049747621
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22793,8 +22793,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToCollect: {fileID: 2105499122}
+  nextButton: {fileID: 0}
   soundPrefab: {fileID: 0}
-  coinID: 
 --- !u!114 &2105499131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23527,8 +23527,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToCollect: {fileID: 2131094322}
+  nextButton: {fileID: 0}
   soundPrefab: {fileID: 0}
-  coinID: 
 --- !u!114 &2131094329
 MonoBehaviour:
   m_ObjectHideFlags: 0
