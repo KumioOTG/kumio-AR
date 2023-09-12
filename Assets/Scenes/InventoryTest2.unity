@@ -690,6 +690,7 @@ MonoBehaviour:
   notCollectedSprite: {fileID: 21300000, guid: cbfa95a357177944bbb3a1061a7bc515, type: 3}
   collectedSprite: {fileID: 21300000, guid: b6f89c4ca5fa52f4aa1b53b82602ea5b, type: 3}
   collectSound: {fileID: 8300000, guid: 8bee5a99833c8a64787a3a07982e3f03, type: 3}
+  itemId: saecla
 --- !u!1 &57757844
 GameObject:
   m_ObjectHideFlags: 0
@@ -1023,6 +1024,7 @@ MonoBehaviour:
   notCollectedSprite: {fileID: 21300000, guid: cbfa95a357177944bbb3a1061a7bc515, type: 3}
   collectedSprite: {fileID: 21300000, guid: b6f89c4ca5fa52f4aa1b53b82602ea5b, type: 3}
   collectSound: {fileID: 0}
+  itemId: 
 --- !u!1 &175387717
 GameObject:
   m_ObjectHideFlags: 0
@@ -1690,6 +1692,7 @@ MonoBehaviour:
   notCollectedSprite: {fileID: 21300000, guid: cbfa95a357177944bbb3a1061a7bc515, type: 3}
   collectedSprite: {fileID: 21300000, guid: b6f89c4ca5fa52f4aa1b53b82602ea5b, type: 3}
   collectSound: {fileID: 8300000, guid: 8bee5a99833c8a64787a3a07982e3f03, type: 3}
+  itemId: constrvit
 --- !u!1 &208052408
 GameObject:
   m_ObjectHideFlags: 0
@@ -2739,6 +2742,7 @@ MonoBehaviour:
   notCollectedSprite: {fileID: 21300000, guid: cbfa95a357177944bbb3a1061a7bc515, type: 3}
   collectedSprite: {fileID: 21300000, guid: b6f89c4ca5fa52f4aa1b53b82602ea5b, type: 3}
   collectSound: {fileID: 8300000, guid: 8bee5a99833c8a64787a3a07982e3f03, type: 3}
+  itemId: qui
 --- !u!1 &266881537
 GameObject:
   m_ObjectHideFlags: 0
@@ -3876,6 +3880,7 @@ MonoBehaviour:
   notCollectedSprite: {fileID: 21300000, guid: cbfa95a357177944bbb3a1061a7bc515, type: 3}
   collectedSprite: {fileID: 21300000, guid: b6f89c4ca5fa52f4aa1b53b82602ea5b, type: 3}
   collectSound: {fileID: 8300000, guid: 8bee5a99833c8a64787a3a07982e3f03, type: 3}
+  itemId: avrea
 --- !u!1 &408487503
 GameObject:
   m_ObjectHideFlags: 0
@@ -3998,6 +4003,8 @@ MonoBehaviour:
   spawnButton: {fileID: 1376063037}
   collectibleObject: {fileID: 0}
   spawnLocation: {fileID: 0}
+  itemId: 
+  notCollectedSound: {fileID: 0}
 --- !u!1 &431680191
 GameObject:
   m_ObjectHideFlags: 0
@@ -6876,6 +6883,7 @@ MonoBehaviour:
   notCollectedSprite: {fileID: 21300000, guid: cbfa95a357177944bbb3a1061a7bc515, type: 3}
   collectedSprite: {fileID: 21300000, guid: b6f89c4ca5fa52f4aa1b53b82602ea5b, type: 3}
   collectSound: {fileID: 8300000, guid: 8bee5a99833c8a64787a3a07982e3f03, type: 3}
+  itemId: gerit
 --- !u!1001 &786909514
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7113,6 +7121,8 @@ MonoBehaviour:
   spawnButton: {fileID: 786959291}
   collectibleObject: {fileID: 786089177}
   spawnLocation: {fileID: 1132486235}
+  itemId: gerit
+  notCollectedSound: {fileID: 8300000, guid: 38c52f17d98cbd54c80d87215709a004, type: 3}
 --- !u!1 &796055098
 GameObject:
   m_ObjectHideFlags: 0
@@ -7414,6 +7424,8 @@ MonoBehaviour:
   spawnButton: {fileID: 841875345}
   collectibleObject: {fileID: 1212356961}
   spawnLocation: {fileID: 1398364649}
+  itemId: auro
+  notCollectedSound: {fileID: 8300000, guid: 38c52f17d98cbd54c80d87215709a004, type: 3}
 --- !u!1 &872490067
 GameObject:
   m_ObjectHideFlags: 0
@@ -7775,6 +7787,8 @@ MonoBehaviour:
   spawnButton: {fileID: 1044254812}
   collectibleObject: {fileID: 0}
   spawnLocation: {fileID: 0}
+  itemId: 
+  notCollectedSound: {fileID: 0}
 --- !u!1 &993581611
 GameObject:
   m_ObjectHideFlags: 0
@@ -8373,6 +8387,8 @@ MonoBehaviour:
   spawnButton: {fileID: 1044254812}
   collectibleObject: {fileID: 401079359}
   spawnLocation: {fileID: 981695994}
+  itemId: avrea
+  notCollectedSound: {fileID: 8300000, guid: 38c52f17d98cbd54c80d87215709a004, type: 3}
 --- !u!1 &1047435727
 GameObject:
   m_ObjectHideFlags: 0
@@ -9186,6 +9202,8 @@ MonoBehaviour:
   spawnButton: {fileID: 1085961287}
   collectibleObject: {fileID: 30603817}
   spawnLocation: {fileID: 1543163376}
+  itemId: saecla
+  notCollectedSound: {fileID: 8300000, guid: 38c52f17d98cbd54c80d87215709a004, type: 3}
 --- !u!1 &1107425513
 GameObject:
   m_ObjectHideFlags: 0
@@ -9674,6 +9692,8 @@ MonoBehaviour:
   spawnButton: {fileID: 786959291}
   collectibleObject: {fileID: 0}
   spawnLocation: {fileID: 0}
+  itemId: 
+  notCollectedSound: {fileID: 0}
 --- !u!1 &1159568235
 GameObject:
   m_ObjectHideFlags: 0
@@ -10011,6 +10031,8 @@ MonoBehaviour:
   spawnButton: {fileID: 1206264375}
   collectibleObject: {fileID: 257094374}
   spawnLocation: {fileID: 1340633011}
+  itemId: qui
+  notCollectedSound: {fileID: 8300000, guid: 38c52f17d98cbd54c80d87215709a004, type: 3}
 --- !u!1 &1212356961
 GameObject:
   m_ObjectHideFlags: 0
@@ -10420,6 +10442,7 @@ MonoBehaviour:
   notCollectedSprite: {fileID: 21300000, guid: cbfa95a357177944bbb3a1061a7bc515, type: 3}
   collectedSprite: {fileID: 21300000, guid: b6f89c4ca5fa52f4aa1b53b82602ea5b, type: 3}
   collectSound: {fileID: 8300000, guid: 8bee5a99833c8a64787a3a07982e3f03, type: 3}
+  itemId: auro
 --- !u!1 &1247378025
 GameObject:
   m_ObjectHideFlags: 0
@@ -10829,6 +10852,7 @@ MonoBehaviour:
   notCollectedSprite: {fileID: 21300000, guid: cbfa95a357177944bbb3a1061a7bc515, type: 3}
   collectedSprite: {fileID: 21300000, guid: b6f89c4ca5fa52f4aa1b53b82602ea5b, type: 3}
   collectSound: {fileID: 8300000, guid: 8bee5a99833c8a64787a3a07982e3f03, type: 3}
+  itemId: portam
 --- !u!1 &1271554376
 GameObject:
   m_ObjectHideFlags: 0
@@ -11185,6 +11209,8 @@ MonoBehaviour:
   spawnButton: {fileID: 1206264375}
   collectibleObject: {fileID: 0}
   spawnLocation: {fileID: 0}
+  itemId: 
+  notCollectedSound: {fileID: 0}
 --- !u!1 &1376063032
 GameObject:
   m_ObjectHideFlags: 0
@@ -11335,6 +11361,8 @@ MonoBehaviour:
   spawnButton: {fileID: 1376063037}
   collectibleObject: {fileID: 193507810}
   spawnLocation: {fileID: 425721572}
+  itemId: constrvit
+  notCollectedSound: {fileID: 8300000, guid: 38c52f17d98cbd54c80d87215709a004, type: 3}
 --- !u!1 &1395206044
 GameObject:
   m_ObjectHideFlags: 0
@@ -11717,6 +11745,8 @@ MonoBehaviour:
   spawnButton: {fileID: 841875345}
   collectibleObject: {fileID: 0}
   spawnLocation: {fileID: 0}
+  itemId: 
+  notCollectedSound: {fileID: 0}
 --- !u!1 &1422127895
 GameObject:
   m_ObjectHideFlags: 0
@@ -12627,6 +12657,8 @@ MonoBehaviour:
   spawnButton: {fileID: 1085961287}
   collectibleObject: {fileID: 0}
   spawnLocation: {fileID: 0}
+  itemId: 
+  notCollectedSound: {fileID: 0}
 --- !u!1 &1544566258
 GameObject:
   m_ObjectHideFlags: 0
@@ -13623,6 +13655,8 @@ MonoBehaviour:
   spawnButton: {fileID: 1693152381}
   collectibleObject: {fileID: 1247378025}
   spawnLocation: {fileID: 1823620663}
+  itemId: portam
+  notCollectedSound: {fileID: 8300000, guid: 38c52f17d98cbd54c80d87215709a004, type: 3}
 --- !u!1 &1698017833
 GameObject:
   m_ObjectHideFlags: 0
@@ -14351,6 +14385,8 @@ MonoBehaviour:
   spawnButton: {fileID: 1693152381}
   collectibleObject: {fileID: 0}
   spawnLocation: {fileID: 0}
+  itemId: 
+  notCollectedSound: {fileID: 0}
 --- !u!1001 &1825256479
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16234,6 +16270,49 @@ Transform:
   m_Father: {fileID: 1107425514}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2074403611
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2074403612}
+  - component: {fileID: 2074403613}
+  m_Layer: 0
+  m_Name: GlobalCollector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2074403612
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2074403611}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2074403613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2074403611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bde9c3ff3111cfa41a56902a0b6a04ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2074890334
 GameObject:
   m_ObjectHideFlags: 0

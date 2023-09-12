@@ -14,6 +14,9 @@ public class CollectCoinAR : MonoBehaviour
     private Sprite collectedSprite;
     [SerializeField]
     private AudioClip collectSound; // The audio clip of the collection sound
+    [SerializeField]
+    private string itemId; // unique identifier for each collectible across all scenes
+
 
     private bool isCollected = false;
     private float lastTapTime = 0f;
@@ -56,6 +59,7 @@ public class CollectCoinAR : MonoBehaviour
         isCollected = true;
         relatedButton.GetComponent<Image>().sprite = collectedSprite;
         audioSource.Play();
+        CollectorManager.Instance.CollectItem(itemId);
         StartCoroutine(DeactivateAfterSound());
     }
 
