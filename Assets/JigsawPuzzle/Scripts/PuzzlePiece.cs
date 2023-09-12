@@ -8,11 +8,20 @@ public class PuzzlePiece : MonoBehaviour, IDragHandler, IEndDragHandler
     private float snapThreshold = 50f;
     private bool isCorrectlyPlaced = false;
 
+    public Transform linked3DModel;  // Drag the 3D model here in the editor
+    private Vector3 initial3DModelPosition;  // To store the initial position of the 3D model
+
     private void Start()
     {
         initialPosition = transform.position;
         int siblingIndex = transform.GetSiblingIndex();
         correctPosition = GameObject.Find("Piece" + (siblingIndex + 1) + "_Target")?.GetComponent<PuzzleTarget>();
+
+        // Save the 3D model's initial position
+        if (linked3DModel != null)
+        {
+            initial3DModelPosition = linked3DModel.position;
+        }
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -33,6 +42,12 @@ public class PuzzlePiece : MonoBehaviour, IDragHandler, IEndDragHandler
         else
         {
             transform.position = initialPosition;
+
+            // Reset the 3D model's position
+            if (linked3DModel != null)
+            {
+                linked3DModel.position = initial3DModelPosition;
+            }
         }
     }
 
@@ -48,5 +63,4 @@ public class PuzzlePiece : MonoBehaviour, IDragHandler, IEndDragHandler
 
         return distance < positionThreshold && angleDifference < rotationThreshold;
     }
-
 }
