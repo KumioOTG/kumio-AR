@@ -17,7 +17,7 @@ public class SpawnCollectible : MonoBehaviour
         spawnButton.onClick.AddListener(Spawn);
     }
 
-    private void Spawn()
+    public void Spawn()
     {
         Instantiate(collectiblePrefab, spawnPoint.position, spawnPoint.rotation);
     }

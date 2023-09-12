@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class CollectCoinAR : MonoBehaviour
 {
     [SerializeField]
@@ -24,19 +25,13 @@ public class CollectCoinAR : MonoBehaviour
 
     private void Update()
     {
-        // Check for touch input
-        if (Input.touchCount > 0 && !isCollected)
+        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began && !isCollected)
         {
-            Touch touch = Input.GetTouch(0);
-            if (touch.phase == TouchPhase.Began)
+            Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
+            RaycastHit hit;
+            if (Physics.Raycast(ray, out hit) && hit.transform == this.transform)
             {
-                // Check if touch position intersects with collectible
-                Vector3 touchPosition = Camera.main.ScreenToWorldPoint(touch.position);
-                touchPosition.z = 0;
-                if (GetComponent<Collider>().bounds.Contains(touchPosition))
-                {
-                    HandleTap();
-                }
+                HandleTap();
             }
         }
     }
