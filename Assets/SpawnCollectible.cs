@@ -6,19 +6,23 @@ using UnityEngine.UI;
 public class SpawnCollectible : MonoBehaviour
 {
     [SerializeField]
-    private Button spawnButton; // Button that will spawn the collectible
+    private Button spawnButton;
     [SerializeField]
-    private GameObject collectiblePrefab; // Prefab of the collectible to spawn
-    [SerializeField]
-    private Transform spawnPoint; // Point where the collectible will be spawned
+    private GameObject collectibleObject; // Direct reference to the object in the scene
+    private CollectCoinAR collectibleScript;
 
     private void Start()
     {
         spawnButton.onClick.AddListener(Spawn);
+        collectibleScript = collectibleObject.GetComponent<CollectCoinAR>();
     }
 
     public void Spawn()
     {
-        Instantiate(collectiblePrefab, spawnPoint.position, spawnPoint.rotation);
+        if (collectibleScript.IsCollected)
+        {
+            collectibleObject.SetActive(true); // Reactivate the collectible
+            collectibleScript.ResetCollectible(); // Reset its state to not collected
+        }
     }
 }
