@@ -9,6 +9,9 @@ public class SpawnCollectible : MonoBehaviour
     private Button spawnButton;
     [SerializeField]
     private GameObject collectibleObject; // Direct reference to the object in the scene
+    [SerializeField]
+    private Transform spawnLocation; // Where the collectible should be reactivated
+
     private CollectCoinAR collectibleScript;
 
     private void Start()
@@ -21,6 +24,8 @@ public class SpawnCollectible : MonoBehaviour
     {
         if (collectibleScript.IsCollected)
         {
+            collectibleObject.transform.position = spawnLocation.position; // Set the collectible's position to the spawn location
+            collectibleObject.transform.rotation = spawnLocation.rotation; // Set the collectible's rotation to the spawn location's rotation
             collectibleObject.SetActive(true); // Reactivate the collectible
             collectibleScript.ResetCollectible(); // Reset its state to not collected
         }

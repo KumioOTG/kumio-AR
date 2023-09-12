@@ -689,6 +689,7 @@ MonoBehaviour:
   relatedButton: {fileID: 1085961287}
   notCollectedSprite: {fileID: 21300000, guid: cbfa95a357177944bbb3a1061a7bc515, type: 3}
   collectedSprite: {fileID: 21300000, guid: b6f89c4ca5fa52f4aa1b53b82602ea5b, type: 3}
+  collectSound: {fileID: 8300000, guid: 8bee5a99833c8a64787a3a07982e3f03, type: 3}
 --- !u!1 &57757844
 GameObject:
   m_ObjectHideFlags: 0
@@ -928,6 +929,7 @@ GameObject:
   - component: {fileID: 110288913}
   - component: {fileID: 110288912}
   - component: {fileID: 110288911}
+  - component: {fileID: 110288914}
   m_Layer: 5
   m_Name: sikke-1-n1-avrea
   m_TagString: Untagged
@@ -1005,6 +1007,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 110288909}
   m_CullTransparentMesh: 1
+--- !u!114 &110288914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110288909}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 580b14a287c3fac48b9651bd802bbfc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  relatedButton: {fileID: 1044254812}
+  notCollectedSprite: {fileID: 21300000, guid: cbfa95a357177944bbb3a1061a7bc515, type: 3}
+  collectedSprite: {fileID: 21300000, guid: b6f89c4ca5fa52f4aa1b53b82602ea5b, type: 3}
+  collectSound: {fileID: 0}
 --- !u!1 &175387717
 GameObject:
   m_ObjectHideFlags: 0
@@ -1475,7 +1493,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 193507810}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1cbf14e2020200b4db74bcc5ae6cdbca, type: 3}
   m_Name: 
@@ -1671,6 +1689,7 @@ MonoBehaviour:
   relatedButton: {fileID: 1376063037}
   notCollectedSprite: {fileID: 21300000, guid: cbfa95a357177944bbb3a1061a7bc515, type: 3}
   collectedSprite: {fileID: 21300000, guid: b6f89c4ca5fa52f4aa1b53b82602ea5b, type: 3}
+  collectSound: {fileID: 8300000, guid: 8bee5a99833c8a64787a3a07982e3f03, type: 3}
 --- !u!1 &208052408
 GameObject:
   m_ObjectHideFlags: 0
@@ -2719,6 +2738,7 @@ MonoBehaviour:
   relatedButton: {fileID: 1206264375}
   notCollectedSprite: {fileID: 21300000, guid: cbfa95a357177944bbb3a1061a7bc515, type: 3}
   collectedSprite: {fileID: 21300000, guid: b6f89c4ca5fa52f4aa1b53b82602ea5b, type: 3}
+  collectSound: {fileID: 8300000, guid: 8bee5a99833c8a64787a3a07982e3f03, type: 3}
 --- !u!1 &266881537
 GameObject:
   m_ObjectHideFlags: 0
@@ -3855,6 +3875,7 @@ MonoBehaviour:
   relatedButton: {fileID: 1044254812}
   notCollectedSprite: {fileID: 21300000, guid: cbfa95a357177944bbb3a1061a7bc515, type: 3}
   collectedSprite: {fileID: 21300000, guid: b6f89c4ca5fa52f4aa1b53b82602ea5b, type: 3}
+  collectSound: {fileID: 8300000, guid: 8bee5a99833c8a64787a3a07982e3f03, type: 3}
 --- !u!1 &408487503
 GameObject:
   m_ObjectHideFlags: 0
@@ -3956,7 +3977,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 425721571}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.2, y: -0.1, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 518532357}
@@ -3969,14 +3990,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 425721571}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dfc1ff1d070afab4d9587752800245e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   spawnButton: {fileID: 1376063037}
-  collectiblePrefab: {fileID: 193507810}
-  spawnPoint: {fileID: 240687633}
+  collectibleObject: {fileID: 0}
+  spawnLocation: {fileID: 0}
 --- !u!1 &431680191
 GameObject:
   m_ObjectHideFlags: 0
@@ -6854,6 +6875,7 @@ MonoBehaviour:
   relatedButton: {fileID: 786959291}
   notCollectedSprite: {fileID: 21300000, guid: cbfa95a357177944bbb3a1061a7bc515, type: 3}
   collectedSprite: {fileID: 21300000, guid: b6f89c4ca5fa52f4aa1b53b82602ea5b, type: 3}
+  collectSound: {fileID: 8300000, guid: 8bee5a99833c8a64787a3a07982e3f03, type: 3}
 --- !u!1001 &786909514
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7045,19 +7067,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 786959289}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 786959292}
-        m_TargetAssemblyTypeName: UIButtonSound, Assembly-CSharp
-        m_MethodName: PlaySound
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &786959292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7065,7 +7075,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 786959287}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d417c04c18b9aa247b13e54dd0139d19, type: 3}
   m_Name: 
@@ -7101,8 +7111,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnButton: {fileID: 786959291}
-  collectiblePrefab: {fileID: 786089177}
-  spawnPoint: {fileID: 2030558311}
+  collectibleObject: {fileID: 786089177}
+  spawnLocation: {fileID: 1132486235}
 --- !u!1 &796055098
 GameObject:
   m_ObjectHideFlags: 0
@@ -7339,7 +7349,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 841875340}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d417c04c18b9aa247b13e54dd0139d19, type: 3}
   m_Name: 
@@ -7388,19 +7398,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 841875342}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 841875344}
-        m_TargetAssemblyTypeName: UIButtonSound, Assembly-CSharp
-        m_MethodName: PlaySound
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &841875346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7414,8 +7412,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnButton: {fileID: 841875345}
-  collectiblePrefab: {fileID: 1212356961}
-  spawnPoint: {fileID: 175387721}
+  collectibleObject: {fileID: 1212356961}
+  spawnLocation: {fileID: 1398364649}
 --- !u!1 &872490067
 GameObject:
   m_ObjectHideFlags: 0
@@ -7756,7 +7754,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 981695993}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 518532357}
@@ -7769,14 +7767,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 981695993}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dfc1ff1d070afab4d9587752800245e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   spawnButton: {fileID: 1044254812}
-  collectiblePrefab: {fileID: 401079359}
-  spawnPoint: {fileID: 110288910}
+  collectibleObject: {fileID: 0}
+  spawnLocation: {fileID: 0}
 --- !u!1 &993581611
 GameObject:
   m_ObjectHideFlags: 0
@@ -8293,7 +8291,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1044254807}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d417c04c18b9aa247b13e54dd0139d19, type: 3}
   m_Name: 
@@ -8342,19 +8340,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1044254809}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1044254811}
-        m_TargetAssemblyTypeName: UIButtonSound, Assembly-CSharp
-        m_MethodName: PlaySound
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1044254813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8385,8 +8371,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnButton: {fileID: 1044254812}
-  collectiblePrefab: {fileID: 401079359}
-  spawnPoint: {fileID: 110288910}
+  collectibleObject: {fileID: 401079359}
+  spawnLocation: {fileID: 981695994}
 --- !u!1 &1047435727
 GameObject:
   m_ObjectHideFlags: 0
@@ -9154,19 +9140,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1085961285}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1085961288}
-        m_TargetAssemblyTypeName: UIButtonSound, Assembly-CSharp
-        m_MethodName: PlaySound
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1085961288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9174,7 +9148,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1085961283}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d417c04c18b9aa247b13e54dd0139d19, type: 3}
   m_Name: 
@@ -9210,8 +9184,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnButton: {fileID: 1085961287}
-  collectiblePrefab: {fileID: 30603817}
-  spawnPoint: {fileID: 665635929}
+  collectibleObject: {fileID: 30603817}
+  spawnLocation: {fileID: 1543163376}
 --- !u!1 &1107425513
 GameObject:
   m_ObjectHideFlags: 0
@@ -9679,7 +9653,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1132486234}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.1, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 518532357}
@@ -9692,14 +9666,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1132486234}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dfc1ff1d070afab4d9587752800245e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   spawnButton: {fileID: 786959291}
-  collectiblePrefab: {fileID: 786089177}
-  spawnPoint: {fileID: 2030558311}
+  collectibleObject: {fileID: 0}
+  spawnLocation: {fileID: 0}
 --- !u!1 &1159568235
 GameObject:
   m_ObjectHideFlags: 0
@@ -9972,7 +9946,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1206264370}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d417c04c18b9aa247b13e54dd0139d19, type: 3}
   m_Name: 
@@ -10021,19 +9995,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1206264372}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1206264374}
-        m_TargetAssemblyTypeName: UIButtonSound, Assembly-CSharp
-        m_MethodName: PlaySound
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1206264376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10047,8 +10009,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnButton: {fileID: 1206264375}
-  collectiblePrefab: {fileID: 257094374}
-  spawnPoint: {fileID: 1843746701}
+  collectibleObject: {fileID: 257094374}
+  spawnLocation: {fileID: 1340633011}
 --- !u!1 &1212356961
 GameObject:
   m_ObjectHideFlags: 0
@@ -10261,7 +10223,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1212356961}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1cbf14e2020200b4db74bcc5ae6cdbca, type: 3}
   m_Name: 
@@ -10457,6 +10419,7 @@ MonoBehaviour:
   relatedButton: {fileID: 841875345}
   notCollectedSprite: {fileID: 21300000, guid: cbfa95a357177944bbb3a1061a7bc515, type: 3}
   collectedSprite: {fileID: 21300000, guid: b6f89c4ca5fa52f4aa1b53b82602ea5b, type: 3}
+  collectSound: {fileID: 8300000, guid: 8bee5a99833c8a64787a3a07982e3f03, type: 3}
 --- !u!1 &1247378025
 GameObject:
   m_ObjectHideFlags: 0
@@ -10865,6 +10828,7 @@ MonoBehaviour:
   relatedButton: {fileID: 1693152381}
   notCollectedSprite: {fileID: 21300000, guid: cbfa95a357177944bbb3a1061a7bc515, type: 3}
   collectedSprite: {fileID: 21300000, guid: b6f89c4ca5fa52f4aa1b53b82602ea5b, type: 3}
+  collectSound: {fileID: 8300000, guid: 8bee5a99833c8a64787a3a07982e3f03, type: 3}
 --- !u!1 &1271554376
 GameObject:
   m_ObjectHideFlags: 0
@@ -11200,7 +11164,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1340633010}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.1, y: -0.1, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 518532357}
@@ -11213,14 +11177,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1340633010}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dfc1ff1d070afab4d9587752800245e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   spawnButton: {fileID: 1206264375}
-  collectiblePrefab: {fileID: 257094374}
-  spawnPoint: {fileID: 1843746701}
+  collectibleObject: {fileID: 0}
+  spawnLocation: {fileID: 0}
 --- !u!1 &1376063032
 GameObject:
   m_ObjectHideFlags: 0
@@ -11306,7 +11270,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1376063032}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d417c04c18b9aa247b13e54dd0139d19, type: 3}
   m_Name: 
@@ -11355,19 +11319,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1376063034}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1376063036}
-        m_TargetAssemblyTypeName: UIButtonSound, Assembly-CSharp
-        m_MethodName: PlaySound
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1376063038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11381,8 +11333,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnButton: {fileID: 1376063037}
-  collectiblePrefab: {fileID: 193507810}
-  spawnPoint: {fileID: 240687633}
+  collectibleObject: {fileID: 193507810}
+  spawnLocation: {fileID: 425721572}
 --- !u!1 &1395206044
 GameObject:
   m_ObjectHideFlags: 0
@@ -11744,7 +11696,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1398364648}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.3, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 518532357}
@@ -11757,14 +11709,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1398364648}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dfc1ff1d070afab4d9587752800245e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   spawnButton: {fileID: 841875345}
-  collectiblePrefab: {fileID: 1212356961}
-  spawnPoint: {fileID: 175387721}
+  collectibleObject: {fileID: 0}
+  spawnLocation: {fileID: 0}
 --- !u!1 &1422127895
 GameObject:
   m_ObjectHideFlags: 0
@@ -12654,7 +12606,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1543163375}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.1, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 518532357}
@@ -12667,14 +12619,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1543163375}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dfc1ff1d070afab4d9587752800245e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   spawnButton: {fileID: 1085961287}
-  collectiblePrefab: {fileID: 30603817}
-  spawnPoint: {fileID: 665635929}
+  collectibleObject: {fileID: 0}
+  spawnLocation: {fileID: 0}
 --- !u!1 &1544566258
 GameObject:
   m_ObjectHideFlags: 0
@@ -12806,7 +12758,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &1593853366
 AudioSource:
   m_ObjectHideFlags: 0
@@ -13606,7 +13558,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1693152376}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d417c04c18b9aa247b13e54dd0139d19, type: 3}
   m_Name: 
@@ -13655,19 +13607,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1693152378}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1693152380}
-        m_TargetAssemblyTypeName: UIButtonSound, Assembly-CSharp
-        m_MethodName: PlaySound
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1693152382
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13681,8 +13621,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnButton: {fileID: 1693152381}
-  collectiblePrefab: {fileID: 1247378025}
-  spawnPoint: {fileID: 891581064}
+  collectibleObject: {fileID: 1247378025}
+  spawnLocation: {fileID: 1823620663}
 --- !u!1 &1698017833
 GameObject:
   m_ObjectHideFlags: 0
@@ -14390,7 +14330,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1823620662}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.2, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 518532357}
@@ -14403,14 +14343,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1823620662}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dfc1ff1d070afab4d9587752800245e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   spawnButton: {fileID: 1693152381}
-  collectiblePrefab: {fileID: 1247378025}
-  spawnPoint: {fileID: 891581064}
+  collectibleObject: {fileID: 0}
+  spawnLocation: {fileID: 0}
 --- !u!1001 &1825256479
 PrefabInstance:
   m_ObjectHideFlags: 0
