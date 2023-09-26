@@ -29,7 +29,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/KGO Rota/node9-2-AR.unity
     guid: 8e852c88ccba137419b345224758347e
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/KGO_AR_Tutorial-SON.unity
     guid: c12e2cc5bdf7f9644bc6abc9b1df906a
   - enabled: 0
@@ -59,7 +59,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/InventoryTest4.unity
     guid: fa671c58014b25b44ba436e35e046e3e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/KGO Rota/node9-2-AR-test4.unity
     guid: de26c0b6250607c43b45ad9a7ce0a745
   m_configObjects:

@@ -1657,8 +1657,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToCollect: {fileID: 98263486}
-  nextButton: {fileID: 0}
   soundPrefab: {fileID: 766275496}
+  coinID: 
 --- !u!65 &98263490
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5649,8 +5649,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToCollect: {fileID: 263075305}
-  nextButton: {fileID: 0}
   soundPrefab: {fileID: 1449581550}
+  coinID: 
 --- !u!114 &263075317
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6657,8 +6657,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToCollect: {fileID: 278202843}
-  nextButton: {fileID: 0}
   soundPrefab: {fileID: 1449581550}
+  coinID: 
 --- !u!65 &278202851
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18706,8 +18706,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToCollect: {fileID: 815336573}
-  nextButton: {fileID: 0}
   soundPrefab: {fileID: 102391823}
+  coinID: 
 --- !u!1 &817760188
 GameObject:
   m_ObjectHideFlags: 0
@@ -18806,7 +18806,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 817760188}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cda9341829221d242a237dda45892a15, type: 3}
   m_Name: 
@@ -19013,8 +19013,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToCollect: {fileID: 856337270}
-  nextButton: {fileID: 0}
   soundPrefab: {fileID: 766275496}
+  coinID: 
 --- !u!23 &856337275
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -27100,8 +27100,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToCollect: {fileID: 1338403368}
-  nextButton: {fileID: 0}
   soundPrefab: {fileID: 102391823}
+  coinID: 
 --- !u!1 &1341490934
 GameObject:
   m_ObjectHideFlags: 0
@@ -36290,8 +36290,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToCollect: {fileID: 0}
-  nextButton: {fileID: 0}
   soundPrefab: {fileID: 0}
+  coinID: 
 --- !u!114 &2000775536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38013,8 +38013,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToCollect: {fileID: 2105499122}
-  nextButton: {fileID: 0}
   soundPrefab: {fileID: 102391823}
+  coinID: 
 --- !u!1 &2111993143
 GameObject:
   m_ObjectHideFlags: 0
