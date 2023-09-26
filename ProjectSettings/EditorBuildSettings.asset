@@ -38,7 +38,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/KG_AR_Tutorial-SON.unity
     guid: 16de1c5caa7043649a40ec43cfcb3788
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/JigsawPuzzle_scene.unity
     guid: d5acff3f43a0d97489a435a3fd5c9aea
   - enabled: 0
@@ -53,6 +53,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/KGO Rota/node9-2-AR-test5.unity
     guid: 4da0bcb922128374588b3d4c1d09c14c
+  - enabled: 0
+    path: Assets/Scenes/AR_quiz.unity
+    guid: 5553b3db6ad969d4189870358079f811
+  - enabled: 1
+    path: Assets/Scenes/deco_test.unity
+    guid: 52214920b0ec6594794c2735ba838b49
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 1f78f2608ac15a643a7898c2a1da3863, type: 2}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 6158a31d495ea594398622d8410277f1, type: 2}
