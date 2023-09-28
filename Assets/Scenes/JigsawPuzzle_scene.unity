@@ -467,6 +467,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a538372a28fe9a449c288092c668907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  linked3DModel: {fileID: 0}
 --- !u!114 &41167256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -480,7 +481,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5882353}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -555,6 +556,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a538372a28fe9a449c288092c668907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  linked3DModel: {fileID: 0}
 --- !u!114 &41989218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -568,7 +570,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5882353}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -773,6 +775,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a538372a28fe9a449c288092c668907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  linked3DModel: {fileID: 0}
 --- !u!114 &64804177
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -786,7 +789,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5882353}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -861,6 +864,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a538372a28fe9a449c288092c668907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  linked3DModel: {fileID: 0}
 --- !u!114 &75218330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -874,7 +878,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5882353}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1126,6 +1130,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a538372a28fe9a449c288092c668907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  linked3DModel: {fileID: 0}
 --- !u!114 &91641192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1139,7 +1144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5882353}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1819,6 +1824,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a538372a28fe9a449c288092c668907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  linked3DModel: {fileID: 0}
 --- !u!114 &106125002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1832,7 +1838,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5882353}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2276,6 +2282,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a538372a28fe9a449c288092c668907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  linked3DModel: {fileID: 0}
 --- !u!114 &142930857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2289,7 +2296,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5882353}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2548,6 +2555,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a538372a28fe9a449c288092c668907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  linked3DModel: {fileID: 0}
 --- !u!114 &218474207
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2561,7 +2569,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5882353}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2932,6 +2940,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a538372a28fe9a449c288092c668907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  linked3DModel: {fileID: 0}
 --- !u!114 &255539391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2945,7 +2954,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5882353}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4039,6 +4048,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a538372a28fe9a449c288092c668907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  linked3DModel: {fileID: 0}
 --- !u!114 &324195775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4052,7 +4062,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5882353}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4424,6 +4434,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a538372a28fe9a449c288092c668907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  linked3DModel: {fileID: 0}
 --- !u!114 &355292472
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4437,7 +4448,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5882353}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4662,6 +4673,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a538372a28fe9a449c288092c668907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  linked3DModel: {fileID: 0}
 --- !u!114 &363819520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4675,7 +4687,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5882353}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6092,6 +6104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a538372a28fe9a449c288092c668907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  linked3DModel: {fileID: 0}
 --- !u!114 &525377207
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6105,7 +6118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5882353}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7127,6 +7140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a538372a28fe9a449c288092c668907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  linked3DModel: {fileID: 0}
 --- !u!114 &644033564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7140,7 +7154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5882353}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7529,6 +7543,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a538372a28fe9a449c288092c668907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  linked3DModel: {fileID: 0}
 --- !u!114 &678719048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7542,7 +7557,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5882353}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -8267,6 +8282,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a538372a28fe9a449c288092c668907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  linked3DModel: {fileID: 0}
 --- !u!114 &741761366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8280,7 +8296,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5882353}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -8455,6 +8471,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a538372a28fe9a449c288092c668907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  linked3DModel: {fileID: 0}
 --- !u!114 &750517363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8468,7 +8485,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5882353}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -9080,6 +9097,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a538372a28fe9a449c288092c668907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  linked3DModel: {fileID: 0}
 --- !u!114 &807544200
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9093,7 +9111,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5882353}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -9433,6 +9451,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a538372a28fe9a449c288092c668907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  linked3DModel: {fileID: 0}
 --- !u!114 &842101349
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9446,7 +9465,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5882353}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -10718,6 +10737,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a538372a28fe9a449c288092c668907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  linked3DModel: {fileID: 0}
 --- !u!114 &955512164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10731,7 +10751,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5882353}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -11433,6 +11453,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a538372a28fe9a449c288092c668907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  linked3DModel: {fileID: 0}
 --- !u!114 &1007974280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11446,7 +11467,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5882353}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -13550,6 +13571,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a538372a28fe9a449c288092c668907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  linked3DModel: {fileID: 0}
 --- !u!114 &1333064782
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13563,7 +13585,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5882353}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -15164,6 +15186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a538372a28fe9a449c288092c668907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  linked3DModel: {fileID: 0}
 --- !u!114 &1535777005
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15177,7 +15200,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5882353}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -15953,6 +15976,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a538372a28fe9a449c288092c668907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  linked3DModel: {fileID: 0}
 --- !u!114 &1650778510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15966,7 +15990,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5882353}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -16041,6 +16065,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a538372a28fe9a449c288092c668907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  linked3DModel: {fileID: 0}
 --- !u!114 &1656628987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16054,7 +16079,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5882353}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -17291,6 +17316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a538372a28fe9a449c288092c668907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  linked3DModel: {fileID: 0}
 --- !u!114 &1763140603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17304,7 +17330,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5882353}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -17379,6 +17405,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a538372a28fe9a449c288092c668907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  linked3DModel: {fileID: 0}
 --- !u!114 &1773614963
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17392,7 +17419,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5882353}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -17467,6 +17494,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a538372a28fe9a449c288092c668907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  linked3DModel: {fileID: 0}
 --- !u!114 &1779340746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17480,7 +17508,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5882353}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -17731,6 +17759,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a538372a28fe9a449c288092c668907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  linked3DModel: {fileID: 0}
 --- !u!114 &1791663750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17744,7 +17773,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5882353}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -18558,6 +18587,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a538372a28fe9a449c288092c668907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  linked3DModel: {fileID: 0}
 --- !u!114 &1909671032
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18571,7 +18601,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5882353}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -18704,6 +18734,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a538372a28fe9a449c288092c668907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  linked3DModel: {fileID: 0}
 --- !u!114 &1914683732
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18717,7 +18748,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5882353}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -18881,6 +18912,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a538372a28fe9a449c288092c668907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  linked3DModel: {fileID: 0}
 --- !u!114 &1954526032
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18894,7 +18926,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5882353}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
