@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class ImageSwitcher : MonoBehaviour
 {
     public Sprite[] imageVariations; // Drag your 6 images here in the inspector
-    [Range(0, 5)] // Assuming you have 6 images
+    [Range(0, 10)] // Assuming you have 6 images
     public int currentImageIndex = 0; // Change this in the inspector to switch image
 
     private Image _imageComponent;
