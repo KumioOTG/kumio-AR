@@ -184,7 +184,7 @@ RectTransform:
   - {fileID: 438407393}
   - {fileID: 103012058}
   m_Father: {fileID: 1817948405}
-  m_RootOrder: 2
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5235,7 +5235,7 @@ RectTransform:
   - {fileID: 2117613641}
   - {fileID: 2137907779}
   m_Father: {fileID: 1817948405}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7879,7 +7879,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 2469263ccc71e57409bb47fc1ec6f282, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 504d1acef973c4c4780dc8aaa37a8d74, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -8014,7 +8014,7 @@ RectTransform:
   - {fileID: 2145639129}
   - {fileID: 1736212102}
   m_Father: {fileID: 1817948405}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8597,7 +8597,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c617e4b38ead99b40bb3a31eca6c1326, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstClickSound: {fileID: 8300000, guid: f0ee82ed4bb48ea49a044eaafb21c6a1, type: 3}
+  firstClickSound: {fileID: 8300000, guid: 9a5bc8534bc0b9b419fd7d2229f9b6cd, type: 3}
   secondClickSound: {fileID: 8300000, guid: f8b8641e90be64e479d611c0c733cf7c, type: 3}
 --- !u!114 &342309869
 MonoBehaviour:
@@ -8747,7 +8747,7 @@ RectTransform:
   - {fileID: 616718210}
   - {fileID: 519425649}
   m_Father: {fileID: 1817948405}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -18743,7 +18743,7 @@ MonoBehaviour:
   currentParentObject: {fileID: 817760188}
   nextParentObject: {fileID: 1060945083}
   collectionSound: {fileID: 8300000, guid: a3b3c422959099e478df0bd658fb2cfc, type: 3}
-  activationDelay: 0
+  activationDelay: 4
 --- !u!114 &817760190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18806,7 +18806,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 817760188}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cda9341829221d242a237dda45892a15, type: 3}
   m_Name: 
@@ -22593,7 +22593,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 1d2f1e0d9a5e3504babaca814fa145db, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 6644e31bd1c8de641a534b0163432aa1, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -22894,7 +22894,6 @@ GameObject:
   - component: {fileID: 1060945089}
   - component: {fileID: 1060945085}
   - component: {fileID: 1060945090}
-  - component: {fileID: 1060945091}
   m_Layer: 0
   m_Name: MixedRealitySceneContent2
   m_TagString: Untagged
@@ -23005,7 +23004,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b5ed6e4633acc542b0f371a2a9cb0d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextParent: {fileID: 1999707927}
+  nextParent: {fileID: 1927721333}
   currentParent: {fileID: 1060945083}
   delayInSeconds: 4
   objectDetector: {fileID: 0}
@@ -23047,31 +23046,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1060945083}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 42cb5d283ea2e314a8b756ef0e21c811, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextParent: {fileID: 1999707927}
+  nextParent: {fileID: 1927721333}
   currentParent: {fileID: 1060945083}
   delayInSeconds: 2
-  puzzleDetector: {fileID: 560285685}
---- !u!114 &1060945091
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1060945083}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb339012b2a8bf44aac61784407b3d82, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nextParent: {fileID: 1999707927}
-  nextParent2: {fileID: 749830251}
-  currentParent: {fileID: 1060945083}
-  delayInSeconds: 0
   puzzleDetector: {fileID: 560285685}
 --- !u!1 &1068369879
 GameObject:
@@ -24106,7 +24088,7 @@ RectTransform:
   - {fileID: 1192128136}
   - {fileID: 1120923835}
   m_Father: {fileID: 1817948405}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -27720,8 +27702,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c617e4b38ead99b40bb3a31eca6c1326, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstClickSound: {fileID: 8300000, guid: aa2eab5661c22ad4a8ed6436f60dbd14, type: 3}
-  secondClickSound: {fileID: 8300000, guid: 6da5b1fab6725b14fb1c5122d932b937, type: 3}
+  firstClickSound: {fileID: 8300000, guid: 28cbcb323e8baaf4f8f1a7cfd0ff677d, type: 3}
+  secondClickSound: {fileID: 8300000, guid: 0c67487c8b8edd24a9f499ee9c8577dd, type: 3}
 --- !u!114 &1377204784
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28569,7 +28551,7 @@ RectTransform:
   - {fileID: 1407164162}
   - {fileID: 169691212}
   m_Father: {fileID: 1817948405}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -29825,7 +29807,7 @@ RectTransform:
   m_Children:
   - {fileID: 1707331489}
   m_Father: {fileID: 1817948405}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -29885,7 +29867,7 @@ Transform:
   - {fileID: 2072001358}
   - {fileID: 1607357539}
   m_Father: {fileID: 1817948405}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1577812778
 GameObject:
@@ -31728,7 +31710,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 2f6ab3ea1f948a740a8b442e0b255bcd, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 17e9952354777b648828b6d6d21b760a, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -33182,7 +33164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ecb8fad79103764c9995fa60d121148, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonClickSound: {fileID: 8300000, guid: 130c5cdd3e1287640a3b2378233c5055, type: 3}
+  buttonClickSound: {fileID: 8300000, guid: 915c117cd6d0ac74c8b50bd247179b8d, type: 3}
 --- !u!114 &1707331491
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33319,7 +33301,7 @@ MonoBehaviour:
   objectToActivate: {fileID: 317839833}
   objectToDeactivate1: {fileID: 1999707927}
   objectToDeactivate2: {fileID: 749830251}
-  delayTime: 0
+  delayTime: 2
 --- !u!1 &1734026287
 GameObject:
   m_ObjectHideFlags: 0
@@ -33871,7 +33853,6 @@ RectTransform:
   m_Children:
   - {fileID: 1634330725}
   - {fileID: 1912024630}
-  - {fileID: 1183224}
   - {fileID: 1557057625}
   - {fileID: 320850966}
   - {fileID: 1149907351}
@@ -33879,6 +33860,7 @@ RectTransform:
   - {fileID: 252548919}
   - {fileID: 1555435180}
   - {fileID: 352398878}
+  - {fileID: 1183224}
   m_Father: {fileID: 749830252}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -37870,8 +37852,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c617e4b38ead99b40bb3a31eca6c1326, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstClickSound: {fileID: 8300000, guid: af63645ccefb4ff4e9323f7a8cb891da, type: 3}
-  secondClickSound: {fileID: 8300000, guid: da5f030aa030a8c4bba08e18d60ed650, type: 3}
+  firstClickSound: {fileID: 8300000, guid: 672c1a34317f7664ab572be733418cdd, type: 3}
+  secondClickSound: {fileID: 8300000, guid: 47c47c117eea5cc42988e430641fe7b7, type: 3}
 --- !u!1 &2105499122
 GameObject:
   m_ObjectHideFlags: 0
@@ -39538,7 +39520,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 841fe6eee4e1baf49bfb314997982552, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 540990bbf9f16da4f8b349d7831351f5, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

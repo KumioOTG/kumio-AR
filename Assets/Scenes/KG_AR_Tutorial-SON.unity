@@ -2854,7 +2854,7 @@ MonoBehaviour:
   - {fileID: 244835112}
   - {fileID: 395370496}
   - {fileID: 449355906}
-  delayInSeconds: 31
+  delayInSeconds: 29
 --- !u!114 &215185706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3247,7 +3247,7 @@ MonoBehaviour:
   objectToDeactivate: {fileID: 215185701}
   objectToActivate1: {fileID: 559932790}
   objectToActivate2: {fileID: 1999707927}
-  delay: 1
+  delay: 0
 --- !u!114 &244835116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4876,7 +4876,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ecb8fad79103764c9995fa60d121148, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonClickSound: {fileID: 8300000, guid: d2fa6981863bb0743bf6797fed9fc2f8, type: 3}
+  buttonClickSound: {fileID: 8300000, guid: 8d4d9cc90911bb241855506e51253d94, type: 3}
 --- !u!114 &283078631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4904,7 +4904,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c617e4b38ead99b40bb3a31eca6c1326, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstClickSound: {fileID: 8300000, guid: d2fa6981863bb0743bf6797fed9fc2f8, type: 3}
+  firstClickSound: {fileID: 8300000, guid: 8d4d9cc90911bb241855506e51253d94, type: 3}
   secondClickSound: {fileID: 0}
 --- !u!114 &283078633
 MonoBehaviour:
@@ -4921,7 +4921,7 @@ MonoBehaviour:
   objectToActivate: {fileID: 317839833}
   objectToDeactivate1: {fileID: 1999707927}
   objectToDeactivate2: {fileID: 559932790}
-  delayTime: 2
+  delayTime: 0
 --- !u!1 &293394363
 GameObject:
   m_ObjectHideFlags: 0
@@ -7033,8 +7033,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c617e4b38ead99b40bb3a31eca6c1326, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstClickSound: {fileID: 8300000, guid: 28cbcb323e8baaf4f8f1a7cfd0ff677d, type: 3}
-  secondClickSound: {fileID: 8300000, guid: f8b8641e90be64e479d611c0c733cf7c, type: 3}
+  firstClickSound: {fileID: 8300000, guid: 2709525e011be2f46bf96771b82e2c99, type: 3}
+  secondClickSound: {fileID: 8300000, guid: 56fb3a82252a8df4a8b8ed43531b3145, type: 3}
 --- !u!1 &449355906 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4952643288996816817, guid: 2225b28a6968ba04594a7564e934a679, type: 3}
@@ -9724,7 +9724,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firstClickSound: {fileID: 0}
-  secondClickSound: {fileID: 8300000, guid: d5939a6b77e5ed94faed8ad27341ba1e, type: 3}
+  secondClickSound: {fileID: 8300000, guid: 74298002a17d1b34998e5b2771d486e8, type: 3}
 --- !u!1 &561486309
 GameObject:
   m_ObjectHideFlags: 0
@@ -12725,7 +12725,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 6644e31bd1c8de641a534b0163432aa1, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 5ffd23f638bd45447bc3f4d9fc0b9b1f, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -19605,7 +19605,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c617e4b38ead99b40bb3a31eca6c1326, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstClickSound: {fileID: 8300000, guid: 0d55f59569f1cde4c8f368958f0ddb48, type: 3}
+  firstClickSound: {fileID: 8300000, guid: e26e26d459f418545a27cd7ebd7cb32d, type: 3}
   secondClickSound: {fileID: 0}
 --- !u!1 &1926868536
 GameObject:
@@ -19783,7 +19783,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firstClickSound: {fileID: 0}
-  secondClickSound: {fileID: 8300000, guid: d5939a6b77e5ed94faed8ad27341ba1e, type: 3}
+  secondClickSound: {fileID: 8300000, guid: 74298002a17d1b34998e5b2771d486e8, type: 3}
 --- !u!1 &1944967896
 GameObject:
   m_ObjectHideFlags: 0
@@ -21821,7 +21821,7 @@ PrefabInstance:
     - target: {fileID: 9181985623241623074, guid: da13b5a4d5e8ddd4e8302eea51606c41, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 0c30219bdd9a4494a99a14c1c1f20f6e, type: 3}
+      objectReference: {fileID: 8300000, guid: 6ad5eba74def78f49ad6a87b1b79beb1, type: 3}
     - target: {fileID: 9181985623241623075, guid: da13b5a4d5e8ddd4e8302eea51606c41, type: 3}
       propertyPath: m_RootOrder
       value: 3
