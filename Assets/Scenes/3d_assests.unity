@@ -436,6 +436,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: horseandcar2
       objectReference: {fileID: 0}
+    - target: {fileID: 1555968438080898431, guid: 82100c9a0bd470e4b9d5fd5eb1731f32, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b78ad9dd856f31148bf3a0bebbbc17ef, type: 2}
+    - target: {fileID: 1555968438080898431, guid: 82100c9a0bd470e4b9d5fd5eb1731f32, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9aff1a597e9b4ec418d5f2d5d80da6ba, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 82100c9a0bd470e4b9d5fd5eb1731f32, type: 3}
 --- !u!1 &692122407
