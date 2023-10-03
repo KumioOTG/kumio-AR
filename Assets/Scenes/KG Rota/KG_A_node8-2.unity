@@ -2480,7 +2480,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 3a0bb9b3fecf25c4dbc47ea299cc9426, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 9b2ff19fbd83d464a955f9b3849e0a0e, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -11742,7 +11742,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12abc0142945ae746be2012a97b1c942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: node2
+  sceneToLoad: KG_A_node8-3
   buttonToActivate: {fileID: 1892745983}
   delayInSeconds: 3
 --- !u!114 &1892745981
