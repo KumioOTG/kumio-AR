@@ -5908,6 +5908,7 @@ GameObject:
   - component: {fileID: 560285687}
   - component: {fileID: 560285686}
   - component: {fileID: 560285685}
+  - component: {fileID: 560285689}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -5995,7 +5996,7 @@ SphereCollider:
   m_GameObject: {fileID: 560285683}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.59195393
   m_Center: {x: 0, y: 0.014813319, z: -0.058634207}
@@ -6048,6 +6049,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 560285683}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!136 &560285689
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560285683}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.75
+  m_Height: 5
+  m_Direction: 2
+  m_Center: {x: -0.000038146973, y: 0.00000014901161, z: -0.0000076293945}
 --- !u!114 &579816341
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11558,6 +11573,7 @@ GameObject:
   - component: {fileID: 1071041342}
   - component: {fileID: 1071041341}
   - component: {fileID: 1071041340}
+  - component: {fileID: 1071041344}
   m_Layer: 0
   m_Name: Sphere (1)
   m_TagString: Untagged
@@ -11645,7 +11661,7 @@ SphereCollider:
   m_GameObject: {fileID: 1071041338}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.5814943
   m_Center: {x: 0, y: 0.016990155, z: -0.054068714}
@@ -11698,6 +11714,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1071041338}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!136 &1071041344
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1071041338}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.75
+  m_Height: 5
+  m_Direction: 2
+  m_Center: {x: -0.000038146973, y: 0.00000014901161, z: -0.0000076293945}
 --- !u!1 &1079653704
 GameObject:
   m_ObjectHideFlags: 0
@@ -24084,7 +24114,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -24098,7 +24128,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.1
-  far clip plane: 50
+  far clip plane: 1000
   field of view: 60
   orthographic: 0
   orthographic size: 5
