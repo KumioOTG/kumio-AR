@@ -8209,7 +8209,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneToLoad: KGO_A_node1
   buttonToActivate: {fileID: 1892745983}
-  delayInSeconds: 3
+  delayInSeconds: 0
 --- !u!114 &1892745981
 MonoBehaviour:
   m_ObjectHideFlags: 0
