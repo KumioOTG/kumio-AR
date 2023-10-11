@@ -89,7 +89,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/KG Rota/KG_A_node6.unity
     guid: 37b1ca7061db3234ca5eb88d8cdd7362
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/KG Rota/KG_A_node7.unity
     guid: c109623fb99a07c46b60821f58eb8141
   - enabled: 0
@@ -107,7 +107,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/KG Rota/KG_A_node9.unity
     guid: 3bb468a7e0645124aa0fefbb6b946c4c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/KG Rota/KG_A_node9-1.unity
     guid: faeeebb1b3479eb418feced89ac11e74
   - enabled: 0
