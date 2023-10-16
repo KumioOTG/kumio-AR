@@ -8,12 +8,15 @@ public class ARinventory : MonoBehaviour
 {
     [SerializeField]
     private Button[] collectibleButtons; // Buttons for each collectible (coins and objects)
+
     [SerializeField]
-    private Sprite notCollectedSprite; // Sprite to show when not collected
+    private Sprite[] notCollectedSprites; // Sprites to show when not collected for each type of object
+
     [SerializeField]
-    private Sprite collectedSprite; // Sprite to show when collected
+    private Sprite[] collectedSprites; // Sprites to show when collected for each type of object
+
     [SerializeField]
-    private string[] itemIds; // You need an array of itemIds corresponding to your buttons
+    private string[] itemIds; // Array of itemIds corresponding to your buttons
 
     private void Start()
     {
@@ -22,11 +25,11 @@ public class ARinventory : MonoBehaviour
         {
             if (CollectorManager.Instance.IsItemCollected(itemIds[i]))
             {
-                collectibleButtons[i].GetComponent<Image>().sprite = collectedSprite;
+                collectibleButtons[i].GetComponent<Image>().sprite = collectedSprites[i];
             }
             else
             {
-                collectibleButtons[i].GetComponent<Image>().sprite = notCollectedSprite;
+                collectibleButtons[i].GetComponent<Image>().sprite = notCollectedSprites[i];
             }
         }
     }
@@ -36,7 +39,7 @@ public class ARinventory : MonoBehaviour
     {
         if (CollectorManager.Instance.IsItemCollected(itemIds[index]))
         {
-            collectibleButtons[index].GetComponent<Image>().sprite = collectedSprite;
+            collectibleButtons[index].GetComponent<Image>().sprite = collectedSprites[index];
         }
     }
 

@@ -53,10 +53,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/InventoryTest2.unity
     guid: a7f7b8f52fe6f69479e45c040a88424c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/InventoryTest3.unity
     guid: e82cab8cf3abb964b813a8ce1da6573a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/InventoryTest4.unity
     guid: fa671c58014b25b44ba436e35e046e3e
   - enabled: 0
@@ -113,6 +113,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/KG Rota/KG_A_node9-2.unity
     guid: 5b54c37c7ce3088478c772a6ddba70d7
+  - enabled: 1
+    path: Assets/Scenes/ObjectInventoryTest1.unity
+    guid: 53013f8edddcd9647a21eaf0cd557694
+  - enabled: 1
+    path: Assets/Scenes/ObjectInventoryTest2.unity
+    guid: db8755cd93e66874ca9cc11d1b209dc2
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 1f78f2608ac15a643a7898c2a1da3863, type: 2}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 6158a31d495ea594398622d8410277f1, type: 2}
