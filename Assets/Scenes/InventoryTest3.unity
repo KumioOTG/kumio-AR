@@ -298,10 +298,7 @@ GameObject:
   - component: {fileID: 30603825}
   - component: {fileID: 30603824}
   - component: {fileID: 30603823}
-  - component: {fileID: 30603822}
-  - component: {fileID: 30603821}
   - component: {fileID: 30603820}
-  - component: {fileID: 30603819}
   - component: {fileID: 30603831}
   m_Layer: 8
   m_Name: Sikke_Saecla
@@ -324,57 +321,6 @@ Transform:
   m_Father: {fileID: 665635929}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &30603819
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 30603817}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8200a044a5affb843ba856b902d9fd3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetObject: {fileID: 0}
-  boundsOverride: {fileID: 0}
-  boundsCalculationMethod: 0
-  activation: 0
-  flattenAxis: 0
-  uniformScaleOnFlattenedAxis: 1
-  boxPadding: {x: 0, y: 0, z: 0}
-  boxDisplayConfiguration: {fileID: 2038613420}
-  linksConfiguration: {fileID: 0}
-  scaleHandlesConfiguration: {fileID: 1927453230}
-  rotationHandlesConfiguration: {fileID: 1553815751}
-  translationHandlesConfiguration: {fileID: 0}
-  handleProximityEffectConfiguration: {fileID: 0}
-  hideElementsInInspector: 1
-  smoothingActive: 0
-  rotateLerpTime: 0.001
-  scaleLerpTime: 0.001
-  translateLerpTime: 0.001
-  enableConstraints: 1
-  constraintsManager: {fileID: 0}
-  rotateStarted:
-    m_PersistentCalls:
-      m_Calls: []
-  rotateStopped:
-    m_PersistentCalls:
-      m_Calls: []
-  scaleStarted:
-    m_PersistentCalls:
-      m_Calls: []
-  scaleStopped:
-    m_PersistentCalls:
-      m_Calls: []
-  translateStarted:
-    m_PersistentCalls:
-      m_Calls: []
-  translateStopped:
-    m_PersistentCalls:
-      m_Calls: []
-  elasticsManager: {fileID: 0}
 --- !u!82 &30603820
 AudioSource:
   m_ObjectHideFlags: 0
@@ -471,41 +417,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &30603821
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 30603817}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5bb3c16ff63673d488b096824f0ed149, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectToCollect: {fileID: 0}
-  soundPrefab: {fileID: 1593853365}
-  coinID: 
---- !u!114 &30603822
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 30603817}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1cbf14e2020200b4db74bcc5ae6cdbca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scaleDuration: 1
-  numberOfFullRotations: 1
-  rotationTime: 0
-  waitTime: 0
-  endingRotationAngles: {x: 0, y: 0, z: 0}
-  rotationAxis: 1
-  clickRotationAngle: 0
-  rotateBackAfterClick: 0
 --- !u!114 &30603823
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -930,7 +841,6 @@ GameObject:
   - component: {fileID: 110288913}
   - component: {fileID: 110288912}
   - component: {fileID: 110288911}
-  - component: {fileID: 110288914}
   m_Layer: 5
   m_Name: sikke-1-n1-avrea
   m_TagString: Untagged
@@ -1008,23 +918,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 110288909}
   m_CullTransparentMesh: 1
---- !u!114 &110288914
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 110288909}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 580b14a287c3fac48b9651bd802bbfc9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  relatedButton: {fileID: 1044254812}
-  notCollectedSprite: {fileID: 21300000, guid: cbfa95a357177944bbb3a1061a7bc515, type: 3}
-  collectedSprite: {fileID: 21300000, guid: b6f89c4ca5fa52f4aa1b53b82602ea5b, type: 3}
-  collectSound: {fileID: 0}
-  itemId: 
 --- !u!1 &175387717
 GameObject:
   m_ObjectHideFlags: 0
@@ -1269,6 +1162,14 @@ MonoBehaviour:
   - {fileID: 841875345}
   notCollectedSprite: {fileID: 21300000, guid: cbfa95a357177944bbb3a1061a7bc515, type: 3}
   collectedSprite: {fileID: 21300000, guid: b6f89c4ca5fa52f4aa1b53b82602ea5b, type: 3}
+  itemIds:
+  - avrea
+  - saecla
+  - gerit
+  - qui
+  - portam
+  - constrvit
+  - auro
 --- !u!4 &184179511
 Transform:
   m_ObjectHideFlags: 0
@@ -3488,10 +3389,7 @@ GameObject:
   - component: {fileID: 401079367}
   - component: {fileID: 401079366}
   - component: {fileID: 401079365}
-  - component: {fileID: 401079364}
-  - component: {fileID: 401079363}
   - component: {fileID: 401079362}
-  - component: {fileID: 401079361}
   - component: {fileID: 401079373}
   m_Layer: 7
   m_Name: Sikke_Avrea
@@ -3514,57 +3412,6 @@ Transform:
   m_Father: {fileID: 110288910}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &401079361
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 401079359}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8200a044a5affb843ba856b902d9fd3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetObject: {fileID: 401079359}
-  boundsOverride: {fileID: 401079370}
-  boundsCalculationMethod: 0
-  activation: 0
-  flattenAxis: 0
-  uniformScaleOnFlattenedAxis: 1
-  boxPadding: {x: 0, y: 0, z: 0}
-  boxDisplayConfiguration: {fileID: 2038613420}
-  linksConfiguration: {fileID: 2010537907}
-  scaleHandlesConfiguration: {fileID: 1927453230}
-  rotationHandlesConfiguration: {fileID: 1553815751}
-  translationHandlesConfiguration: {fileID: 0}
-  handleProximityEffectConfiguration: {fileID: 0}
-  hideElementsInInspector: 1
-  smoothingActive: 0
-  rotateLerpTime: 0.001
-  scaleLerpTime: 0.001
-  translateLerpTime: 0.001
-  enableConstraints: 1
-  constraintsManager: {fileID: 401079369}
-  rotateStarted:
-    m_PersistentCalls:
-      m_Calls: []
-  rotateStopped:
-    m_PersistentCalls:
-      m_Calls: []
-  scaleStarted:
-    m_PersistentCalls:
-      m_Calls: []
-  scaleStopped:
-    m_PersistentCalls:
-      m_Calls: []
-  translateStarted:
-    m_PersistentCalls:
-      m_Calls: []
-  translateStopped:
-    m_PersistentCalls:
-      m_Calls: []
-  elasticsManager: {fileID: 0}
 --- !u!82 &401079362
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3661,41 +3508,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &401079363
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 401079359}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5bb3c16ff63673d488b096824f0ed149, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectToCollect: {fileID: 0}
-  soundPrefab: {fileID: 1593853365}
-  coinID: 
---- !u!114 &401079364
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 401079359}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1cbf14e2020200b4db74bcc5ae6cdbca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scaleDuration: 1
-  numberOfFullRotations: 1
-  rotationTime: 0
-  waitTime: 0
-  endingRotationAngles: {x: 0, y: 0, z: 0}
-  rotationAxis: 1
-  clickRotationAngle: 0
-  rotateBackAfterClick: 0
 --- !u!114 &401079365
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6491,10 +6303,7 @@ GameObject:
   - component: {fileID: 786089185}
   - component: {fileID: 786089184}
   - component: {fileID: 786089183}
-  - component: {fileID: 786089182}
-  - component: {fileID: 786089181}
   - component: {fileID: 786089180}
-  - component: {fileID: 786089179}
   - component: {fileID: 786089191}
   m_Layer: 9
   m_Name: Sikke_Gerit
@@ -6517,57 +6326,6 @@ Transform:
   m_Father: {fileID: 2030558311}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &786089179
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 786089177}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8200a044a5affb843ba856b902d9fd3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetObject: {fileID: 0}
-  boundsOverride: {fileID: 0}
-  boundsCalculationMethod: 0
-  activation: 0
-  flattenAxis: 0
-  uniformScaleOnFlattenedAxis: 1
-  boxPadding: {x: 0, y: 0, z: 0}
-  boxDisplayConfiguration: {fileID: 2038613420}
-  linksConfiguration: {fileID: 0}
-  scaleHandlesConfiguration: {fileID: 1927453230}
-  rotationHandlesConfiguration: {fileID: 1553815751}
-  translationHandlesConfiguration: {fileID: 0}
-  handleProximityEffectConfiguration: {fileID: 0}
-  hideElementsInInspector: 1
-  smoothingActive: 0
-  rotateLerpTime: 0.001
-  scaleLerpTime: 0.001
-  translateLerpTime: 0.001
-  enableConstraints: 1
-  constraintsManager: {fileID: 0}
-  rotateStarted:
-    m_PersistentCalls:
-      m_Calls: []
-  rotateStopped:
-    m_PersistentCalls:
-      m_Calls: []
-  scaleStarted:
-    m_PersistentCalls:
-      m_Calls: []
-  scaleStopped:
-    m_PersistentCalls:
-      m_Calls: []
-  translateStarted:
-    m_PersistentCalls:
-      m_Calls: []
-  translateStopped:
-    m_PersistentCalls:
-      m_Calls: []
-  elasticsManager: {fileID: 0}
 --- !u!82 &786089180
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6664,41 +6422,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &786089181
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 786089177}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5bb3c16ff63673d488b096824f0ed149, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectToCollect: {fileID: 0}
-  soundPrefab: {fileID: 1593853365}
-  coinID: 
---- !u!114 &786089182
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 786089177}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1cbf14e2020200b4db74bcc5ae6cdbca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scaleDuration: 1
-  numberOfFullRotations: 1
-  rotationTime: 0
-  waitTime: 0
-  endingRotationAngles: {x: 0, y: 0, z: 0}
-  rotationAxis: 1
-  clickRotationAngle: 0
-  rotateBackAfterClick: 0
 --- !u!114 &786089183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14909,7 +14632,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneToLoad: InventoryTest4
   buttonToActivate: {fileID: 1892745983}
-  delayInSeconds: 3
+  delayInSeconds: 0
 --- !u!114 &1892745981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15966,22 +15689,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2000635217}
   m_Mesh: {fileID: 4300000, guid: 881ad7ed8b8f229499fafa5cd1f3fe7f, type: 3}
---- !u!114 &2010537907
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b80d41f9007c4b948b0808690195e77c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  wireframeMaterial: {fileID: 0}
-  wireframeEdgeRadius: 0.001
-  wireframeShape: 0
-  showWireframe: 1
 --- !u!1 &2030558310
 GameObject:
   m_ObjectHideFlags: 0
@@ -16805,7 +16512,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.1
-  far clip plane: 50
+  far clip plane: 200
   field of view: 60
   orthographic: 0
   orthographic size: 5

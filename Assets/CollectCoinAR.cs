@@ -27,9 +27,46 @@ public class CollectCoinAR : MonoBehaviour
 
     private void Start()
     {
-        relatedButton.GetComponent<Image>().sprite = notCollectedSprite;
+        UpdateButtonImage();
         audioSource = gameObject.AddComponent<AudioSource>();
         audioSource.clip = collectSound;
+
+        // Listen to the event
+        CollectorManager.Instance.OnItemCollected += HandleItemCollected;
+
+        // Subscribe to the event
+        CollectorManager.Instance.OnSceneChanged += UpdateButtonImage;
+    }
+
+    private void OnDestroy()
+    {
+        // Unsubscribe from the event
+        if (CollectorManager.Instance != null)
+            CollectorManager.Instance.OnItemCollected -= HandleItemCollected;
+
+        // Unsubscribe from the new event
+        if (CollectorManager.Instance != null)
+            CollectorManager.Instance.OnSceneChanged -= UpdateButtonImage;
+    }
+
+    private void UpdateButtonImage()
+    {
+        if (CollectorManager.Instance.IsItemCollected(itemId))
+        {
+            relatedButton.GetComponent<Image>().sprite = collectedSprite;
+        }
+        else
+        {
+            relatedButton.GetComponent<Image>().sprite = notCollectedSprite;
+        }
+    }
+
+    private void HandleItemCollected(string collectedItemId)
+    {
+        if (collectedItemId == itemId)
+        {
+            UpdateButtonImage();
+        }
     }
 
     private void Update()

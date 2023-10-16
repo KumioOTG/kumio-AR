@@ -12,30 +12,37 @@ public class ARinventory : MonoBehaviour
     private Sprite notCollectedSprite; // Sprite to show when not collected
     [SerializeField]
     private Sprite collectedSprite; // Sprite to show when collected
-
-    private bool[] collectiblesCollected;
+    [SerializeField]
+    private string[] itemIds; // You need an array of itemIds corresponding to your buttons
 
     private void Start()
     {
-        collectiblesCollected = new bool[collectibleButtons.Length];
-
-        // Initialize buttons with not collected sprite
+        // Initialize buttons based on CollectorManager's state
         for (int i = 0; i < collectibleButtons.Length; i++)
         {
-            collectibleButtons[i].GetComponent<Image>().sprite = notCollectedSprite;
+            if (CollectorManager.Instance.IsItemCollected(itemIds[i]))
+            {
+                collectibleButtons[i].GetComponent<Image>().sprite = collectedSprite;
+            }
+            else
+            {
+                collectibleButtons[i].GetComponent<Image>().sprite = notCollectedSprite;
+            }
         }
     }
 
     // Call this method when a collectible is collected
     public void UpdateCollectibleButton(int index)
     {
-        collectiblesCollected[index] = true;
-        collectibleButtons[index].GetComponent<Image>().sprite = collectedSprite;
+        if (CollectorManager.Instance.IsItemCollected(itemIds[index]))
+        {
+            collectibleButtons[index].GetComponent<Image>().sprite = collectedSprite;
+        }
     }
 
     // Call this method to check if a collectible has been collected
     public bool IsCollectibleCollected(int index)
     {
-        return collectiblesCollected[index];
+        return CollectorManager.Instance.IsItemCollected(itemIds[index]);
     }
 }
