@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731901, g: 0.13414825, b: 0.121078506, a: 1}
+  m_IndirectSpecularColor: {r: 0.127319, g: 0.13414825, b: 0.121078506, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -13109,7 +13109,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5516487406859467972, guid: 45e0f06c750176947862c10346226439, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2.28
+      value: 2.024868
       objectReference: {fileID: 0}
     - target: {fileID: 5516487406859467972, guid: 45e0f06c750176947862c10346226439, type: 3}
       propertyPath: m_LocalScale.z
@@ -13121,7 +13121,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5516487406859467972, guid: 45e0f06c750176947862c10346226439, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0011297
+      value: 0.00033187
       objectReference: {fileID: 0}
     - target: {fileID: 5516487406859467972, guid: 45e0f06c750176947862c10346226439, type: 3}
       propertyPath: m_LocalPosition.z
@@ -13746,14 +13746,14 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1828097019}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 4769d4d4107ac264daf2f04b4dd6635e, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 8020ce7bf827ada4c8e98fea41c9f093, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
-  m_TargetTexture: {fileID: 8400000, guid: 1aa43d743b675314386f2073b9b78cf6, type: 2}
+  m_TargetTexture: {fileID: 8400000, guid: 49cfae16bc0fb1843bd6560cce201c47, type: 2}
   m_TimeReference: 0
   m_TargetMaterialRenderer: {fileID: 0}
-  m_TargetMaterialProperty: _MainTex
+  m_TargetMaterialProperty: _MaskTex
   m_RenderMode: 2
   m_AspectRatio: 4
   m_DataSource: 0
@@ -13806,7 +13806,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9d0bc746b8a1bde44859eb113b80c397, type: 2}
+  - {fileID: 2100000, guid: adffc78a83d79a345b72f2e454af06e8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13845,7 +13845,7 @@ Transform:
   m_GameObject: {fileID: 1828097019}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.118, y: -0.006, z: 4.5860014}
-  m_LocalScale: {x: 3.11, y: 3.91, z: 219.39981}
+  m_LocalScale: {x: 3.11, y: 3.4724712, z: 219.39981}
   m_Children: []
   m_Father: {fileID: 296809406}
   m_RootOrder: 3
