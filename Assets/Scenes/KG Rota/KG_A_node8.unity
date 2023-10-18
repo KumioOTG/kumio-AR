@@ -14449,7 +14449,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u015Eu anda Alt\u0131nkap\u0131 \xF6n\xFCndesiniz"
+  m_Text: "\u015Eu anda Alt\u0131n Kap\u0131 \xF6n\xFCndesiniz"
 --- !u!222 &2101527183
 CanvasRenderer:
   m_ObjectHideFlags: 0

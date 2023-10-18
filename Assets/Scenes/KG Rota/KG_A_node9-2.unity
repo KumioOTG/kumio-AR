@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.127319, g: 0.13414825, b: 0.121078506, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731901, g: 0.13414825, b: 0.121078506, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -15506,7 +15506,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u015Eu anda Alt\u0131nkap\u0131 \xF6n\xFCndesiniz"
+  m_Text: "\u015Eu anda Alt\u0131n Kap\u0131 \xF6n\xFCndesiniz"
 --- !u!222 &2101527183
 CanvasRenderer:
   m_ObjectHideFlags: 0
