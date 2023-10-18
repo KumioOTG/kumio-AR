@@ -51,8 +51,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Tests/node9-2-AR-test3.unity
     guid: 5f966479b02ad784ea211a754e0541db
   - enabled: 0
-    path: Assets/Scenes/InventoryTest2.unity
-    guid: a7f7b8f52fe6f69479e45c040a88424c
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
     path: Assets/Scenes/InventoryTest3.unity
     guid: e82cab8cf3abb964b813a8ce1da6573a
@@ -71,7 +71,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/KG Rota/KG_A_node1.unity
     guid: 8d7df3034b480004b9d71b234c0ba3eb
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/KG Rota/KG_A_node2.unity
     guid: 730e90fa1523db44bb3a0399e348223d
   - enabled: 0
@@ -113,12 +113,18 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/KG Rota/KG_A_node9-2.unity
     guid: 5b54c37c7ce3088478c772a6ddba70d7
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ObjectInventoryTest1.unity
     guid: 53013f8edddcd9647a21eaf0cd557694
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ObjectInventoryTest2.unity
     guid: db8755cd93e66874ca9cc11d1b209dc2
+  - enabled: 0
+    path: Assets/Scenes/SahneGecisTest1.unity
+    guid: ea8de213ff412a349bf888697bf63755
+  - enabled: 0
+    path: Assets/Scenes/SahneGecisTest2.unity
+    guid: 275e35ec7cdea564fb5e162045d4282e
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 1f78f2608ac15a643a7898c2a1da3863, type: 2}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 6158a31d495ea594398622d8410277f1, type: 2}
