@@ -1,6 +1,10 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Microsoft.MixedReality.Toolkit;
+using System.Collections;
+
+
+
 
 public class SceneManagementAR : MonoBehaviour
 {
@@ -20,6 +24,12 @@ public class SceneManagementAR : MonoBehaviour
         }
     }
 
+    private IEnumerator Start()
+    {
+        yield return new WaitForSeconds(0.5f);  // Wait for half a second
+        OnSceneLoaded(SceneManager.GetActiveScene(), LoadSceneMode.Single);
+    }
+
     void OnEnable()
     {
         SceneManager.sceneLoaded += OnSceneLoaded;
@@ -32,12 +42,7 @@ public class SceneManagementAR : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        // Reset the player's position and rotation
-        if (MixedRealityPlayspace.Transform != null) // Ensure MRTK is set up in the scene
-        {
-            MixedRealityPlayspace.Transform.position = Vector3.zero;
-            MixedRealityPlayspace.Transform.rotation = Quaternion.identity;
-        }
+        Debug.Log("Scene loaded: " + scene.name);
     }
 }
 

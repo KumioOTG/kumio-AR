@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Microsoft.MixedReality.Toolkit.UI;
-using System.Collections;
+using Microsoft.MixedReality.Toolkit;
+
 
 
 public class SceneSwitcher : MonoBehaviour
@@ -14,13 +15,21 @@ public class SceneSwitcher : MonoBehaviour
     [SerializeField] private float delayInSeconds = 0f; // Delay before scene change
 
     private void Awake()
-    {
-        // Register our OnClick function
-        buttonToActivate.OnClick.AddListener(OnClick);
+    { 
+      // Unregister to ensure we don't add it multiple times
+    buttonToActivate.OnClick.RemoveListener(OnClick);
+    // Register our OnClick function
+    buttonToActivate.OnClick.AddListener(OnClick);
     }
 
     public void OnClick()
     {
+        if (MixedRealityPlayspace.Transform != null)
+        {
+            PlayerData.LastPosition = MixedRealityPlayspace.Transform.position;
+            PlayerData.LastRotation = MixedRealityPlayspace.Transform.rotation;
+        }
+        
         UnityEngine.Debug.Log("Button Pressed! Loading scene after delay...");
 
         // Start the scene load with delay
