@@ -3174,7 +3174,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToDeactivate: {fileID: 285078112}
   objectToActivate: {fileID: 296809403}
-  delay: 2
+  delay: 0
   arSessionResetter: {fileID: 1343935032}
 --- !u!1 &296809403
 GameObject:
