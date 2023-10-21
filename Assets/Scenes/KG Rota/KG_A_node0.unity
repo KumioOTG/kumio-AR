@@ -3933,6 +3933,7 @@ GameObject:
   - component: {fileID: 451804451}
   - component: {fileID: 451804450}
   - component: {fileID: 451804452}
+  - component: {fileID: 451804453}
   m_Layer: 0
   m_Name: Anlati
   m_TagString: Untagged
@@ -4057,12 +4058,26 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 451804449}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 11e7d1be941cd2a4689b166987c82ddb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   objectToActivate: {fileID: 1544566258}
+--- !u!114 &451804453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 451804449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a47d3d7f70cd5724a90adf5e1a48d815, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToLoad: KG_A_node1
+  delayInSeconds: 0
 --- !u!1001 &452283056
 PrefabInstance:
   m_ObjectHideFlags: 0
