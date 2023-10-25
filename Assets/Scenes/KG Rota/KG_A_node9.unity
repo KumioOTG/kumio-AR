@@ -2783,7 +2783,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11e7d1be941cd2a4689b166987c82ddb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToActivate: {fileID: 1544566258}
+  objectsToActivate: []
 --- !u!114 &451804454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14962,8 +14962,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "K\xFC\xE7\xFCk Alt\u0131n Kap\u0131'n\u0131n oldu\u011Fu i\xE7 avluya
-    do\u011Fru ilerleyiniz"
+  m_Text: "\u015Eu anda Alt\u0131n Kap\u0131'n\u0131n alt\u0131nda durmaktas\u0131n\u0131z"
 --- !u!222 &2101527183
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15207,7 +15206,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Alt\u0131n Kap\u0131'n\u0131n \xF6n\xFCne geldi\u011Finde"
+  m_text: "K\xFC\xE7\xFCk avluya ge\xE7en merdivenlere geldi\u011Finde"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

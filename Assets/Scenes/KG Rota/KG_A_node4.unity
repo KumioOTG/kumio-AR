@@ -2966,7 +2966,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11e7d1be941cd2a4689b166987c82ddb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToActivate: {fileID: 1544566258}
+  objectsToActivate: []
 --- !u!114 &451804454
 MonoBehaviour:
   m_ObjectHideFlags: 0
