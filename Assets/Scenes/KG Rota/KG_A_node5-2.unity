@@ -3106,7 +3106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11e7d1be941cd2a4689b166987c82ddb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToActivate: {fileID: 1544566258}
+  objectsToActivate: []
 --- !u!114 &451804454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3881,8 +3881,8 @@ MonoBehaviour:
   - {fileID: 984397288}
   activationMaterials:
   - {fileID: 2100000, guid: 961672df9a9d7814ab906711b2a4756b, type: 2}
-  - {fileID: 2100000, guid: e178b0974374627419ea59dd5cf17e82, type: 2}
-  - {fileID: 2100000, guid: 2b1d712a689f0d841943e224369719d0, type: 2}
+  - {fileID: 2100000, guid: f9a8f77c74d1df64482af0f47043ff07, type: 2}
+  - {fileID: 2100000, guid: b03b145f45e0ecf4fbad75ca1e0f70f3, type: 2}
   activationTime: 24
   duration: 9
 --- !u!1 &648992832
