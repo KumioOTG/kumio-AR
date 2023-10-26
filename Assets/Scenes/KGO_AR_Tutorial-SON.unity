@@ -1425,6 +1425,49 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 59323006}
   m_Mesh: {fileID: 2534964839176971238, guid: 1450fea79dc569646a5d67a7eae7bba2, type: 3}
+--- !u!1 &61275130
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 61275131}
+  - component: {fileID: 61275132}
+  m_Layer: 0
+  m_Name: CollectorManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &61275131
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61275130}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 817760191}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &61275132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61275130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bde9c3ff3111cfa41a56902a0b6a04ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &89469680
 GameObject:
   m_ObjectHideFlags: 0
@@ -1527,6 +1570,8 @@ GameObject:
   - component: {fileID: 98263488}
   - component: {fileID: 98263498}
   - component: {fileID: 98263499}
+  - component: {fileID: 98263500}
+  - component: {fileID: 98263501}
   m_Layer: 0
   m_Name: model_sikke-1-n2
   m_TagString: Untagged
@@ -1934,7 +1979,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 98263486}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1755c178010072e44ad21c2bfc28798c, type: 3}
   m_Name: 
@@ -1942,6 +1987,35 @@ MonoBehaviour:
   objectToCollect: {fileID: 98263486}
   soundPrefab1: {fileID: 953028889}
   soundPrefab2: {fileID: 766275496}
+--- !u!114 &98263500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 98263486}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8304624f28357ff4fab2cac4f2582626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collectSound: {fileID: 8300000, guid: 8bee5a99833c8a64787a3a07982e3f03, type: 3}
+  itemId: sikke1
+--- !u!114 &98263501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 98263486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f60286a289ff5e448a3b378a7207d61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collectSound: {fileID: 8300000, guid: 8bee5a99833c8a64787a3a07982e3f03, type: 3}
+  objectToActivate: {fileID: 953028889}
+  itemId: sikke1
 --- !u!1 &101086881
 GameObject:
   m_ObjectHideFlags: 0
@@ -4199,17 +4273,17 @@ MonoBehaviour:
   targetToFace: {fileID: 0}
   pivotAxis: 7
   minDistance: 0.3
-  maxDistance: 0.9
-  defaultDistance: 0.7
+  maxDistance: 0.3
+  defaultDistance: 0.3
   maxViewHorizontalDegrees: 30
   maxViewVerticalDegrees: 20
   reorientWhenOutsideParameters: 1
   orientToControllerDeadzoneDegrees: 60
-  ignoreAngleClamp: 0
+  ignoreAngleClamp: 1
   ignoreDistanceClamp: 0
   ignoreReferencePitchAndRoll: 0
   pitchOffset: 0
-  verticalMaxDistance: 0
+  verticalMaxDistance: 0.3
   angularClampMode: 0
   tetherAngleSteps: 6
   boundsScaler: 1
@@ -5309,6 +5383,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: buyutec_pivoted
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1b6fa1a8fd17dce489ba2e5951820a78, type: 3}
+      propertyPath: m_TagString
+      value: Collectible
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b6fa1a8fd17dce489ba2e5951820a78, type: 3}
 --- !u!4 &263075304 stripped
@@ -5380,7 +5458,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 181cd563a8349c34ea8978b0bc8d9c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hostTransform: {fileID: 0}
+  hostTransform: {fileID: 263075304}
   manipulationType: 3
   twoHandedManipulationType: 7
   allowFarManipulation: 1
@@ -5651,7 +5729,21 @@ MonoBehaviour:
   objectToCollect: {fileID: 263075305}
   soundPrefab: {fileID: 1449581550}
   coinID: 
---- !u!114 &263075317
+--- !u!114 &263075315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263075305}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8304624f28357ff4fab2cac4f2582626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collectSound: {fileID: 8300000, guid: a5d5fb7beb57caa49b95dfb406a4a1be, type: 3}
+  itemId: nesne1
+--- !u!114 &263075316
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5659,6 +5751,21 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 263075305}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f60286a289ff5e448a3b378a7207d61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collectSound: {fileID: 8300000, guid: a5d5fb7beb57caa49b95dfb406a4a1be, type: 3}
+  objectToActivate: {fileID: 812567122}
+  itemId: nesne1
+--- !u!114 &263075317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263075305}
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1755c178010072e44ad21c2bfc28798c, type: 3}
   m_Name: 
@@ -6426,6 +6533,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: mermi_pivoted
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6e03bc58236a9464eafec81cde4e315b, type: 3}
+      propertyPath: m_TagString
+      value: Collectible
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e03bc58236a9464eafec81cde4e315b, type: 3}
 --- !u!4 &278202842 stripped
@@ -6768,7 +6879,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &278202855
+--- !u!114 &278202853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 278202843}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8304624f28357ff4fab2cac4f2582626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collectSound: {fileID: 8300000, guid: a5d5fb7beb57caa49b95dfb406a4a1be, type: 3}
+  itemId: nesne2
+--- !u!114 &278202854
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6776,6 +6901,21 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 278202843}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f60286a289ff5e448a3b378a7207d61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collectSound: {fileID: 8300000, guid: a5d5fb7beb57caa49b95dfb406a4a1be, type: 3}
+  objectToActivate: {fileID: 812567122}
+  itemId: nesne2
+--- !u!114 &278202855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 278202843}
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1755c178010072e44ad21c2bfc28798c, type: 3}
   m_Name: 
@@ -7672,17 +7812,17 @@ MonoBehaviour:
   targetToFace: {fileID: 0}
   pivotAxis: 7
   minDistance: 0.3
-  maxDistance: 0.9
-  defaultDistance: 0.7
+  maxDistance: 0.3
+  defaultDistance: 0.3
   maxViewHorizontalDegrees: 30
   maxViewVerticalDegrees: 20
   reorientWhenOutsideParameters: 1
   orientToControllerDeadzoneDegrees: 60
-  ignoreAngleClamp: 0
+  ignoreAngleClamp: 1
   ignoreDistanceClamp: 0
   ignoreReferencePitchAndRoll: 0
   pitchOffset: 0
-  verticalMaxDistance: 0
+  verticalMaxDistance: 0.3
   angularClampMode: 0
   tetherAngleSteps: 6
   boundsScaler: 1
@@ -13248,7 +13388,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &548198304
 Transform:
   m_ObjectHideFlags: 0
@@ -13279,7 +13419,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 731e50b7a5988754faf3f71414d354d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToActivate: {fileID: 1927721333}
+  objectToActivate: {fileID: 1999707927}
   objectToDeactivate: {fileID: 1060945083}
 --- !u!114 &548198306
 MonoBehaviour:
@@ -17043,7 +17183,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &764359832
 Transform:
   m_ObjectHideFlags: 0
@@ -18436,7 +18576,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &812567123
 AudioSource:
   m_ObjectHideFlags: 0
@@ -18448,7 +18588,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: eaad0078ae1e96f45a7a0dc20392079e, type: 3}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -18563,6 +18703,7 @@ GameObject:
   - component: {fileID: 815336576}
   - component: {fileID: 815336575}
   - component: {fileID: 815336581}
+  - component: {fileID: 815336582}
   m_Layer: 0
   m_Name: Sikke3
   m_TagString: Collectible
@@ -18700,14 +18841,28 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 815336573}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5bb3c16ff63673d488b096824f0ed149, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   objectToCollect: {fileID: 815336573}
   soundPrefab: {fileID: 102391823}
-  coinID: 
+  coinID: sikke3
+--- !u!114 &815336582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 815336573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8304624f28357ff4fab2cac4f2582626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collectSound: {fileID: 8300000, guid: 8bee5a99833c8a64787a3a07982e3f03, type: 3}
+  itemId: sikke3
 --- !u!1 &817760188
 GameObject:
   m_ObjectHideFlags: 0
@@ -18721,6 +18876,8 @@ GameObject:
   - component: {fileID: 817760189}
   - component: {fileID: 817760193}
   - component: {fileID: 817760190}
+  - component: {fileID: 817760194}
+  - component: {fileID: 817760195}
   m_Layer: 0
   m_Name: MixedRealitySceneContent1
   m_TagString: Untagged
@@ -18735,7 +18892,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 817760188}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d81a882752d10e14cb0c3ee1624f5344, type: 3}
   m_Name: 
@@ -18769,17 +18926,17 @@ MonoBehaviour:
   targetToFace: {fileID: 0}
   pivotAxis: 7
   minDistance: 0.3
-  maxDistance: 0.9
-  defaultDistance: 0.7
+  maxDistance: 0.3
+  defaultDistance: 0.3
   maxViewHorizontalDegrees: 30
   maxViewVerticalDegrees: 20
   reorientWhenOutsideParameters: 1
   orientToControllerDeadzoneDegrees: 60
-  ignoreAngleClamp: 0
+  ignoreAngleClamp: 1
   ignoreDistanceClamp: 0
   ignoreReferencePitchAndRoll: 0
   pitchOffset: 0
-  verticalMaxDistance: 0
+  verticalMaxDistance: 0.3
   angularClampMode: 0
   tetherAngleSteps: 6
   boundsScaler: 1
@@ -18796,6 +18953,7 @@ Transform:
   m_Children:
   - {fileID: 1655665755}
   - {fileID: 1868792477}
+  - {fileID: 61275131}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -18816,7 +18974,7 @@ MonoBehaviour:
   - {fileID: 2105499122}
   - {fileID: 815336573}
   nextParent: {fileID: 1060945083}
-  delayInSeconds: 2
+  delayInSeconds: 0
 --- !u!114 &817760193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18836,6 +18994,40 @@ MonoBehaviour:
   additionalOffset: {x: 0, y: 0, z: 0}
   additionalRotation: {x: 0, y: 0, z: 0}
   updateSolvers: 1
+--- !u!114 &817760194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 817760188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3d393ddd061c2c4a9f4ee0e61d79911, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerItemId1: sikke1
+  triggerItemId2: sikke2
+  triggerItemId3: sikke3
+  objectToActivate: {fileID: 1060945083}
+  objectToDeactivate: {fileID: 817760188}
+  delayInSeconds: 1
+  soundToWaitFor: {fileID: 1655665756}
+--- !u!114 &817760195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 817760188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c98bb01229b7c3d4488ef5c84570f0c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToDeactivate: {fileID: 0}
+  objectToActivate: {fileID: 0}
+  delay: 1
 --- !u!1 &836076611
 GameObject:
   m_ObjectHideFlags: 0
@@ -18947,6 +19139,8 @@ GameObject:
   - component: {fileID: 856337282}
   - component: {fileID: 856337283}
   - component: {fileID: 856337284}
+  - component: {fileID: 856337285}
+  - component: {fileID: 856337286}
   m_Layer: 0
   m_Name: model_sikke-2-n4
   m_TagString: Untagged
@@ -19366,7 +19560,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 856337270}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1755c178010072e44ad21c2bfc28798c, type: 3}
   m_Name: 
@@ -19374,6 +19568,35 @@ MonoBehaviour:
   objectToCollect: {fileID: 856337270}
   soundPrefab1: {fileID: 953028889}
   soundPrefab2: {fileID: 766275496}
+--- !u!114 &856337285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 856337270}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8304624f28357ff4fab2cac4f2582626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collectSound: {fileID: 8300000, guid: 8bee5a99833c8a64787a3a07982e3f03, type: 3}
+  itemId: sikke2
+--- !u!114 &856337286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 856337270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f60286a289ff5e448a3b378a7207d61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collectSound: {fileID: 8300000, guid: 8bee5a99833c8a64787a3a07982e3f03, type: 3}
+  objectToActivate: {fileID: 953028889}
+  itemId: sikke2
 --- !u!1 &894423655
 GameObject:
   m_ObjectHideFlags: 0
@@ -20167,7 +20390,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &953028890
 AudioSource:
   m_ObjectHideFlags: 0
@@ -20179,7 +20402,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 4ce5299f11bb3224f8ba1aff97bf39fa, type: 3}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -21834,7 +22057,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1001659601}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a664553295a031b46a5ca874761d53a7, type: 3}
   m_Name: 
@@ -23000,7 +23223,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1060945083}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0b5ed6e4633acc542b0f371a2a9cb0d5, type: 3}
   m_Name: 
@@ -23071,7 +23294,7 @@ MonoBehaviour:
   nextParent: {fileID: 1999707927}
   nextParent2: {fileID: 749830251}
   currentParent: {fileID: 1060945083}
-  delayInSeconds: 0
+  delayInSeconds: 1
   puzzleDetector: {fileID: 560285685}
 --- !u!1 &1068369879
 GameObject:
@@ -26975,6 +27198,7 @@ GameObject:
   - component: {fileID: 1338403371}
   - component: {fileID: 1338403370}
   - component: {fileID: 1338403376}
+  - component: {fileID: 1338403377}
   m_Layer: 0
   m_Name: Sikke1
   m_TagString: Collectible
@@ -27112,14 +27336,28 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1338403368}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5bb3c16ff63673d488b096824f0ed149, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   objectToCollect: {fileID: 1338403368}
   soundPrefab: {fileID: 102391823}
-  coinID: 
+  coinID: sikke1
+--- !u!114 &1338403377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338403368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8304624f28357ff4fab2cac4f2582626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collectSound: {fileID: 8300000, guid: 8bee5a99833c8a64787a3a07982e3f03, type: 3}
+  itemId: sikke1
 --- !u!1 &1341490934
 GameObject:
   m_ObjectHideFlags: 0
@@ -33319,7 +33557,7 @@ MonoBehaviour:
   objectToActivate: {fileID: 317839833}
   objectToDeactivate1: {fileID: 1999707927}
   objectToDeactivate2: {fileID: 749830251}
-  delayTime: 0
+  delayTime: 1
 --- !u!1 &1734026287
 GameObject:
   m_ObjectHideFlags: 0
@@ -35546,7 +35784,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1927721333}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7337c64ab8c26d54aaad9c02b59996cc, type: 3}
   m_Name: 
@@ -35974,17 +36212,17 @@ MonoBehaviour:
   targetToFace: {fileID: 0}
   pivotAxis: 7
   minDistance: 0.3
-  maxDistance: 0.9
-  defaultDistance: 0.7
+  maxDistance: 0.3
+  defaultDistance: 0.3
   maxViewHorizontalDegrees: 30
   maxViewVerticalDegrees: 20
   reorientWhenOutsideParameters: 1
   orientToControllerDeadzoneDegrees: 60
-  ignoreAngleClamp: 0
+  ignoreAngleClamp: 1
   ignoreDistanceClamp: 0
   ignoreReferencePitchAndRoll: 0
   pitchOffset: 0
-  verticalMaxDistance: 0
+  verticalMaxDistance: 0.3
   angularClampMode: 0
   tetherAngleSteps: 6
   boundsScaler: 1
@@ -37888,6 +38126,7 @@ GameObject:
   - component: {fileID: 2105499125}
   - component: {fileID: 2105499124}
   - component: {fileID: 2105499130}
+  - component: {fileID: 2105499131}
   m_Layer: 0
   m_Name: Sikke2
   m_TagString: Collectible
@@ -38025,14 +38264,28 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2105499122}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5bb3c16ff63673d488b096824f0ed149, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   objectToCollect: {fileID: 2105499122}
   soundPrefab: {fileID: 102391823}
-  coinID: 
+  coinID: sikke2
+--- !u!114 &2105499131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105499122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8304624f28357ff4fab2cac4f2582626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collectSound: {fileID: 8300000, guid: 8bee5a99833c8a64787a3a07982e3f03, type: 3}
+  itemId: sikke2
 --- !u!1 &2111993143
 GameObject:
   m_ObjectHideFlags: 0
@@ -38415,7 +38668,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.1
-  far clip plane: 50
+  far clip plane: 200
   field of view: 60
   orthographic: 0
   orthographic size: 5
