@@ -10,8 +10,8 @@ public class ActivateObjectOnCollect4 : MonoBehaviour
     [SerializeField] private string triggerItemId3; // The third itemId
     [SerializeField] private GameObject objectToActivate; // Object to activate
     [SerializeField] private GameObject objectToDeactivate; // Object to deactivate
-    [SerializeField] private float delayInSeconds = 0f;
-    [SerializeField] private AudioSource soundToWaitFor;
+    [SerializeField] private AudioSource audioSource; // AudioSource component to play sound
+    [SerializeField] private AudioClip collectionCompleteSound; // Sound to play when all items are collected
 
     private bool isItem1Collected = false;
     private bool isItem2Collected = false;
@@ -19,6 +19,7 @@ public class ActivateObjectOnCollect4 : MonoBehaviour
 
     private void Start()
     {
+        // Assuming CollectorManager.Instance.OnItemCollected is an event that's invoked when an item is collected
         CollectorManager.Instance.OnItemCollected += HandleItemCollected;
     }
 
@@ -48,51 +49,42 @@ public class ActivateObjectOnCollect4 : MonoBehaviour
         // Check if all items have been collected
         if (isItem1Collected && isItem2Collected && isItem3Collected)
         {
-            ActivateObject();
+            PlayCollectionCompleteSound();
         }
     }
 
-    private void ActivateObject()
+    private void PlayCollectionCompleteSound()
     {
-        if (soundToWaitFor != null && soundToWaitFor.isPlaying)
+        if (audioSource != null && collectionCompleteSound != null)
         {
+            audioSource.clip = collectionCompleteSound;
+            audioSource.Play();
             StartCoroutine(WaitForSoundToEnd());
         }
         else
         {
-            DoActivateObject();
+            ActivateDeactivateObjects();
         }
     }
 
     private IEnumerator WaitForSoundToEnd()
     {
-        while (soundToWaitFor.isPlaying)
+        while (audioSource != null && audioSource.isPlaying)
         {
             yield return null;
         }
-
-        DoActivateObject();
+        ActivateDeactivateObjects();
     }
 
-    private void DoActivateObject()
+    private void ActivateDeactivateObjects()
     {
-        UnityEngine.Debug.Log("Activating and deactivating objects after delay...");
-        StartCoroutine(ActivateAndDeactivateObjectsAfterDelay());
-    }
-
-    private IEnumerator ActivateAndDeactivateObjectsAfterDelay()
-    {
-        yield return new WaitForSeconds(delayInSeconds);
-
         if (objectToDeactivate != null)
         {
-            UnityEngine.Debug.Log("Deactivating object: " + objectToDeactivate.name);
             objectToDeactivate.SetActive(false);
         }
 
         if (objectToActivate != null)
         {
-            UnityEngine.Debug.Log("Activating object: " + objectToActivate.name);
             objectToActivate.SetActive(true);
         }
     }
