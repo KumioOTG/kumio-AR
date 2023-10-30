@@ -7314,7 +7314,7 @@ MonoBehaviour:
   relatedButton: {fileID: 621394140}
   notCollectedSprite: {fileID: 21300000, guid: 0c006d74dad7b1646abb65d722308b25, type: 3}
   collectedSprite: {fileID: 21300000, guid: 1db3281a56e18434fa6e7ab22a85bef8, type: 3}
-  collectSound: {fileID: 8300000, guid: 8bee5a99833c8a64787a3a07982e3f03, type: 3}
+  collectSound: {fileID: 8300000, guid: a5d5fb7beb57caa49b95dfb406a4a1be, type: 3}
   itemId: yuzuk
 --- !u!114 &671729652
 MonoBehaviour:
@@ -16992,7 +16992,7 @@ MonoBehaviour:
   relatedButton: {fileID: 321573836}
   notCollectedSprite: {fileID: 21300000, guid: 9ac6b720f6ce01b41aa29b648b46ddbf, type: 3}
   collectedSprite: {fileID: 21300000, guid: 094b72a8c7a4ec445a18e4f18d61eda8, type: 3}
-  collectSound: {fileID: 8300000, guid: 8bee5a99833c8a64787a3a07982e3f03, type: 3}
+  collectSound: {fileID: 8300000, guid: a5d5fb7beb57caa49b95dfb406a4a1be, type: 3}
   itemId: kavuk
 --- !u!114 &1615725397
 MonoBehaviour:
