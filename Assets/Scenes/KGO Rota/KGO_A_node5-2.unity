@@ -15359,7 +15359,7 @@ MonoBehaviour:
   secondAdditionalObject: {fileID: 257094374}
   puzzleContainer: {fileID: 1107982144}
   popUpDelay: 0
-  puzzleDeactivationDelay: 2
+  puzzleDeactivationDelay: 6
   fadeInDuration: 2
 --- !u!1 &1271554376
 GameObject:
