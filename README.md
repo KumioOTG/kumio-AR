@@ -29,6 +29,10 @@ Utilize diegetic elements and historical decorations to add to the immersive exp
 - Enable installation from unknown sources on your device: Go to Settings > Security.
 - Enable Unknown Sources or Install Unknown Apps.
 - Open your project in Unity.
+- Go to Window > Package Manager.
+- Click on the "+" button and select "Add package from git URL..."
+- Enter the MRTK 2 GitHub URL: https://github.com/microsoft/MixedRealityToolkit-Unity.git?path=/Assets/MRTK.
+- Click "Add" to import the MRTK 2 toolkit into your project.
 - Install Android Build Support via Unity Hub.
 - Switch platform to Android in File > Build Settings.
 - Set Company Name, Product Name, and Package Name.
